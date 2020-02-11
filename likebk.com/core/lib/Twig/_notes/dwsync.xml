@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Autoloader.php" server="81.16.141.210" local="132024265683141942" remote="131553396000000000" Dst="0" />
+<file name="CompilerInterface.php" server="81.16.141.210" local="132024265685460594" remote="131553396000000000" Dst="0" />
+<file name="Compiler.php" server="81.16.141.210" local="132024265685740440" remote="131553396000000000" Dst="0" />
+<file name="Environment.php" server="81.16.141.210" local="132024265685960294" remote="131553396000000000" Dst="0" />
+<file name="ExistsLoaderInterface.php" server="81.16.141.210" local="132024265690158107" remote="131553396000000000" Dst="0" />
+<file name="Error.php" server="81.16.141.210" local="132024265690857539" remote="131553396000000000" Dst="0" />
+<file name="ExpressionParser.php" server="81.16.141.210" local="132024265691367251" remote="131553396000000000" Dst="0" />
+<file name="ExtensionInterface.php" server="81.16.141.210" local="132024265700332221" remote="131553396000000000" Dst="0" />
+<file name="Extension.php" server="81.16.141.210" local="132024265700551983" remote="131553396000000000" Dst="0" />
+<file name="FilterCallableInterface.php" server="81.16.141.210" local="132024265702770749" remote="131553396000000000" Dst="0" />
+<file name="FilterInterface.php" server="81.16.141.210" local="132024265705049645" remote="131553396000000000" Dst="0" />
+<file name="Filter.php" server="81.16.141.210" local="132024265705249341" remote="131553396000000000" Dst="0" />
+<file name="FunctionCallableInterface.php" server="81.16.141.210" local="132024265708937201" remote="131553396000000000" Dst="0" />
+<file name="FunctionInterface.php" server="81.16.141.210" local="132024265709157271" remote="131553396000000000" Dst="0" />
+<file name="LexerInterface.php" server="81.16.141.210" local="132024265711235891" remote="131553396000000000" Dst="0" />
+<file name="Function.php" server="81.16.141.210" local="132024265711445774" remote="131553396000000000" Dst="0" />
+<file name="Lexer.php" server="81.16.141.210" local="132024265711755589" remote="131553396000000000" Dst="0" />
+<file name="LoaderInterface.php" server="81.16.141.210" local="132024265716762825" remote="131553396000000000" Dst="0" />
+<file name="Markup.php" server="81.16.141.210" local="132024265717052663" remote="131553396000000000" Dst="0" />
+<file name="NodeInterface.php" server="81.16.141.210" local="132024265781036118" remote="131553396000000000" Dst="0" />
+<file name="NodeOutputInterface.php" server="81.16.141.210" local="132024265781235988" remote="131553396000000000" Dst="0" />
+<file name="Node.php" server="81.16.141.210" local="132024265783144928" remote="131553396000000000" Dst="0" />
+<file name="NodeTraverser.php" server="81.16.141.210" local="132024265783144928" remote="131553396000000000" Dst="0" />
+<file name="NodeVisitorInterface.php" server="81.16.141.210" local="132024265789041645" remote="131553396000000000" Dst="0" />
+<file name="ParserInterface.php" server="81.16.141.210" local="132024265789041645" remote="131553396000000000" Dst="0" />
+<file name="Parser.php" server="81.16.141.210" local="132024265789231524" remote="131553396000000000" Dst="0" />
+<file name="SimpleFilter.php" server="81.16.141.210" local="132024265794268576" remote="131553396000000000" Dst="0" />
+<file name="SimpleFunction.php" server="81.16.141.210" local="132024265794278557" remote="131553396000000000" Dst="0" />
+<file name="SimpleTest.php" server="81.16.141.210" local="132024265794578391" remote="131553396000000000" Dst="0" />
+<file name="TemplateInterface.php" server="81.16.141.210" local="132024265797126957" remote="131553396000000000" Dst="0" />
+<file name="Template.php" server="81.16.141.210" local="132024265797136948" remote="131553396000000000" Dst="0" />
+<file name="TestInterface.php" server="81.16.141.210" local="132024265802234023" remote="131553396000000000" Dst="0" />
+<file name="TestCallableInterface.php" server="81.16.141.210" local="132024265802433909" remote="131553396000000000" Dst="0" />
+<file name="Test.php" server="81.16.141.210" local="132024265804742606" remote="131553396000000000" Dst="0" />
+<file name="TokenParserBrokerInterface.php" server="81.16.141.210" local="132024265819544157" remote="131553396000000000" Dst="0" />
+<file name="TokenParserBroker.php" server="81.16.141.210" local="132024265819554179" remote="131553396000000000" Dst="0" />
+<file name="TokenParserInterface.php" server="81.16.141.210" local="132024265819734066" remote="131553396000000000" Dst="0" />
+<file name="Token.php" server="81.16.141.210" local="132024265822032736" remote="131553396000000000" Dst="0" />
+<file name="TokenStream.php" server="81.16.141.210" local="132024265822032736" remote="131553396000000000" Dst="0" />
+<file name="TokenParser.php" server="81.16.141.210" local="132024265822232653" remote="131553396000000000" Dst="0" />
+</dwsync>

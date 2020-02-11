@@ -1,0 +1,547 @@
+<link rel="stylesheet" href="css/tabs.css" type="text/css">
+
+  <tr >                                    
+ <td align="left" valign="middle" class="leftItemTDnb">
+ <h3>Свитки чарования</h3>
+ <div class="pagesMainStyle">
+ <strong>Зачарованная вещь</strong> - вещь улучшенная: может давать (в зависимости от вида "чарки") несколько статов, модификаторы, защиту от магии или урона, увеличение уровня маны или уровня жизни и тд.<br>
+ <strong>Свитки зачарования</strong> можно выбить из боссов в <strong>Катакомбах</strong>, начиная с 3-го этажа.<br />
+   При использовании на вещь, данные свитки добавляют один из параметров, который выбирается рандомно.<br />
+   <br />
+   Чарки разделены на <u>уровни</u>:<br />
+   от <strong>[0]</strong> до <strong>[3]</strong>.<br />
+   <br />
+   ... а также <u>виды</u>:<br />
+   <strong>Зачаровать оружие</strong> - подходит для всех видов оружия.<br />
+   <strong>Зачаровать броню</strong> - подходит для всех видов брони, рубах, футболок, поножей и щитов.<br />
+   <strong>Зачаровать шлем</strong> - подходит для шлемов и даже для сапог.<br />
+   <strong>Зачаровать перчатки</strong> - подходит для перчаток, наручей и поясов.<br />
+   <strong>Зачаровать украшение</strong> - работает с кольцами, ожерельями и серьгами.<br />
+   <br />
+   Чарки выпадают преимущественно [0]-го уровня. Ими невозможно зачаровать вещь. Чарку более высокого уровня можно собрать из <u>3-х чарок</u> предыдущего.<br />
+   Так, из 3-х свитков &quot;Зачаровать оружие <strong>[0]</strong>&quot;, получим &quot;Зачаровать оружие <strong>[1]</strong>&quot;.<br />
+   Три <strong>чарки [1]</strong> = одна <strong>чарка [2]</strong>.<br />
+   Три <strong>чарки [2]</strong> = одна <strong>чарка [3]</strong>.<br />
+   <br />
+   Сборка производится в <img src="pages/maps/images/obj/kk_final_altar.png" alt="" /><strong>алтаре</strong> 4-го этажа <strong>Катакомб</strong> (клетка <strong>c2</strong> по <a href="index.php?section=maps&item=katakombi" target="_blank">карте</a>).<br />
+   Для работы лаборатории необходимо иметь при себе <img src="http://img.primebk.ru/i/items/key_cube_3.gif" alt="" width="40" /> <strong>Пирамидальный ключ</strong>.<br />
+   Ключ собирается на том же этаже, на <img src="pages/maps/images/obj/altar.gif" alt="" /> <strong>Алтаре</strong> (клетка <strong>k10</strong>), из двух частей:<br />
+   <img src="http://img.primebk.ru/i/items/key_cube_1.gif" alt="" width="40" /> <strong>Обломка</strong> и <img src="http://img.primebk.ru/i/items/key_cube_2.gif" alt="" width="40" /> <strong>Осколка</strong>. Обломок находится в сундуке за Епископом (2-й этаж, &quot;верхом&quot;). Осколок - сундук за Чернокнижником (2-й этаж, &quot;низом&quot;).<br />
+   <br />
+   • Чарки не связываются общей судьбой.<br />
+   • Чарки должны быть одного вида.<br><br>
+   <span style="font-size:23px;    color: #8f0000; margin:10px 0"> Таблица возможных уселений от чарок</span><br />
+<div class="tab" style="margin-top:15px">
+  <button class="tablinks" onclick="chahgeTab(event, 'tab1')"  id="defaultOpen">Зачаровать оружие </button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab2')">Зачаровать броню</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab3')">Зачаровать шлем</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab4')">Зачаровать перчатки</button>
+    <button class="tablinks" onclick="chahgeTab(event, 'tab5')">Зачаровать украшение </button>
+</div>
+
+<div id="tab1" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="80%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;" >
+  <tbody >
+      <tr>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_3_1.gif" alt="" border="0" style="    vertical-align: middle;" /><strong> [1]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_3_2.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [2]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_3_3.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [3]</strong></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Оружие</strong></td>
+      </tr>
+    <tr>
+      <td align="center">Сила +<strong>1</strong><br />
+        Интуиция +<strong>1</strong><br />
+        Ловкость +<strong>1</strong><br />
+        Интеллект +<strong>1</strong><br />
+        Уровень жизни (HP) +<strong>10</strong><br />
+        Мф. мощности урона (%) +<strong>1</strong><br />
+        Мф. удара сквозь броню (%) +<strong>6</strong><br />
+        Мф. удара сквозь броню (%) +<strong>10</strong><br />
+        Мф. мощности крит. удара (%) +<strong>1</strong><br />
+        Мф. критического удара (%) +<strong>15</strong><br />
+        Мф. увертывания (%) +<strong>15</strong><br />
+        Мф. против увертывания (%) +<strong>10</strong></td>
+      <td align="center">Сила <strong>+2</strong><br />
+        Интуиция <strong>+2</strong><br />
+        Ловкость <strong>+2</strong><br />
+        Интеллект<strong> +2</strong><br />
+        Мф. мощности урона (%) <b>+3</b><br />
+        Мф. контрудара (%): <strong>+4</strong><br />
+        Мф. удара сквозь броню (%) <b>+15</b><br />
+        Мф. мощности крит. удара (%)<b>+3</b><br />
+        Мф. парирования (%)<strong> +2</strong><br />
+        Мф. увертывания (%) <b>+35</b><br />
+        Мф. против увертывания (%) <b>+25</b><br />
+        Мф. против критического удара (%) <b>+25</b><br />
+        Мф. критического удара (%) <b>+25</strong></td>
+      <td align="center">Сила <strong>+3</strong><br />
+        Интуиция <strong>+3</strong><br />
+        Ловкость <strong>+3</strong><br />
+        Интеллект <strong>+3</strong><br />
+        Мф. мощности урона (%) <b>+5</b><br />
+        Мф. контрудара (%): <strong>+7</strong><br />
+        Мф. удара сквозь броню (%) <b>+25</b><br />
+        Мф. мощности крит. удара (%) <b>+5</b><br />
+        Мф. парирования (%) <strong>+3</strong><br />
+        Мф. увертывания (%) <b>+50</b><br />
+        Мф. против увертывания (%) <b>+35</b><br />
+        Мф. против критического удара (%)<b>+35</b><br />
+        Мф. критического удара (%) <b>+50</b></td>
+    </tr>
+	<tr style="background:#EDD7AE">
+	<td colspan="3" align="center"><strong>Двуручное Оружие</strong></td>
+      </tr>
+    <tr>
+      <td align="center">Сила +<strong>2</strong><br />
+        Интуиция +<strong>2</strong><br />
+        Ловкость +<strong>2</strong><br />
+        Интеллект +<strong>2</strong><br />
+        Уровень жизни (HP) +<strong>20</strong><br />
+        Мф. мощности урона (%) +<strong>2</strong><br />
+        Мф. против увертывания (%) +<strong>50</strong><br />
+        Мф. критического удара (%) +<strong>30</strong><br />
+        Мф. парирования (%) +<strong>2</strong><br />
+        Мф. мощности магии стихий (%) +<strong>2</strong></td>
+      <td align="center">Сила <strong>+4</strong><br />
+        Интуиция <strong>+4</strong><br />
+        Ловкость <strong>+4</strong><br />
+        Интеллект<strong> +4</strong><br />
+        Мф. мощности магии стихий (%) <b>+6</b><br />
+        Мф. удара сквозь броню (%) <b>+30</b><br />
+        
+        
+        Мф. увертывания (%) <b>+30</b><br />
+        Мф. против увертывания (%) <b>+50</b><br />
+        Мф. против критического удара (%) <b>+50</b><br />
+        Мф. критического удара (%) <b>+70</strong></td>
+      <td align="center">Сила <strong>+6</strong><br />
+        Интуиция <strong>+6</strong><br />
+        Ловкость <strong>+6</strong><br />
+        Интеллект <strong>+6</strong><br />
+        
+        Мф. удара сквозь броню (%) <b>+50</b><br />
+        Защита от магии (%)<b>+32</b><br />
+        Мф. мощности магии стихий (%) <b>+10</b></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="tab2" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="80%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;" >
+  <tbody >
+    <tr>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_4_1.gif" alt="" border="0" style="    vertical-align: middle;" /><strong> [1]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_4_2.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [2]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_4_3.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [3]</strong></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Броня</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +<strong>10</strong><br />
+        Мф. мощности крит. удара (%) <b>+1</b><br />
+        Мф. против критического удара (%) +<strong>10</strong><br />
+        Защита от урона <b>+5</b><br />
+        Защита от магии <b>+5</b><br />
+        Броня корпуса +<strong>7</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Сила <b>+3</b><br />
+        Интуиция <b>+2</b><br />
+        Интуиция <b>+3</b><br />
+		Ловкость <b>+2</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+2</b><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Мф. против критического удара (%) <b>+25</b><br />
+        Защита от магии <b>+11</b><br />
+        Защита от урона <b>+11</b><br />
+        Броня корпуса +<strong>15</strong></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Уровень жизни (HP) <b>+35</b><br />
+        Броня корпуса <b>+22</b><br />
+        Защита от магии <b>+16</b><br />
+        Защита от урона <b>+16</b></td>
+    </tr>   <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Щиты</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +<strong>10</strong><br />
+        Мф. блока щитом (%) <b>+1</b><br />
+        Защита от магии <b>+</b>5<br />
+        Броня пояса +<strong>7</strong><br />
+        Броня корпуса +<strong>7</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Защита от магии <b>+11</b><br />
+        Защита от урона <b>+11</b><br />
+        Мф. блока щитом (%) <b>+3</b><br />
+        Броня корпуса +<strong>15</strong><br />
+        Броня ног +<strong>15</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+3</b><br />
+        Защита от магии <b>+16</b><br />
+        Уровень жизни (HP) +<strong>99</strong><br />
+        Мф. блока щитом (%) <b>+</b>5</td>
+    </tr>  <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Рубахи</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +<strong>10</strong><br />
+        Мф. мощности крит. удара (%) <b>+1</b><br />
+        Мф. против критического удара (%) +<strong>10</strong><br />
+        Защита от урона <b>+</b>5<br />
+        Защита от магии <b>+</b>5<br />
+        Броня корпуса +<strong>7</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Сила <b>+3</b><br />
+        Интуиция <b>+2</b><br />
+		Интуиция <b>+3</b><br />
+        Ловкость <b>+2</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+2</b><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Мф. против критического удара (%) <b>+25</b><br />
+        Защита от магии <b>+11</b><br />
+        Защита от урона <b>+11</b><br />
+        Броня корпуса +<strong>15</strong></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Уровень жизни (HP) <b>+35</b><br />
+        Броня корпуса <b>+22</b><br />
+        Защита от магии <b>+16</b><br />
+        Защита от урона <b>+16</b></td>
+    </tr>
+       <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Поножны</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +<strong>10</strong><br />
+        Защита от магии <b>+5</b><br />
+        Броня пояса +<strong>7</strong></td>
+      <td align="center">Сила <b>+3</b><br />
+        Сила <b>+2</b><br />
+		Интуиция <b>+3</b><br />
+        Интуиция <b>+2</b><br />
+		Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Защита от магии <b>+11</b><br />
+        Защита от урона <b>+11</b><br />
+        Броня пояса +<strong>15</strong></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Защита от магии <b>+16</b><br />
+        Уровень жизни (HP) +<strong>99</strong><br />
+        Защита от магии <b>+16</b><br />
+Защита от урона <b>+16</b></td>
+    </tr> 
+  </tbody>
+</table>
+</div>
+
+<div id="tab3" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="80%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;" >
+  <tbody >
+    <tr>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_9_1.gif" alt="" border="0" style="    vertical-align: middle;" /><strong> [1]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_9_2.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [2]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_9_3.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [3]</strong></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Сапоги</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +<strong>10</strong><br />
+        Мф. увертывания (%) +<strong>15</strong><br />
+        Защита от магии <b>+5</b><br />
+        Защита от урона <b>+5</b><br />
+        Броня ног +7</td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Мф. увертывания (%) <b>+35</b><br />
+        Защита от магии <b>+11</b><br />
+        Защита от урона <b>+11</b><br />
+        Броня ног +15</td>
+      <td align="center">Сила <b>+2</b><br />
+        Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Уровень жизни (HP) <b>+35</b><br />
+        Броня ног <b>+22</b></td>
+    </tr>   <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Шлемы</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +<strong>10</strong><br />
+        Мф. контрудара (%) <b>+2</b><br />
+        Мф. против критического удара (%) +<strong>10</strong><br />
+        Защита от урона <b>+5</b><br />
+        Защита от магии <b>+5</b><br />
+        Броня головы +<strong>7</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект +<strong>2</strong><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Мф. против критического удара (%) <b>+25</b><br />
+        Защита от урона <b>+11</b><br />
+        Защита от магии <b>+11</b><br />
+        Броня головы +<strong>15</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Защита от магии <b>+16</b><br />
+        Защита от урона <b>+16</b><br />
+        Броня головы <b>+22</b></td>
+    </tr> 
+  </tbody>
+</table>
+
+</div>
+<div id="tab4" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="80%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;" >
+  <tbody >
+    <tr>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_5_1.gif" alt="" border="0" style="    vertical-align: middle;" /><strong> [1]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_5_2.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [2]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_5_3.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [3]</strong></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Перчатки</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Мф. мощности урона (%) <b>+1</b><br />
+        Мф. мощности крит. удара (%) <b>+1</b><br />
+        Мф. критического удара (%) +<strong>10</strong><br />
+        Мф. контрудара (%) <b>+2</b><br />
+        Мф. парирования (%) +<strong>1</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Мф. мощности урона (%) <b>+2</b><br />
+        Мф. мощности крит. удара (%) <b>+2</b><br />
+        Мф. критического удара (%) <b>+25</b><br />
+        Мф. парирования (%) <b>+2</b><br />
+        Броня пояса +<strong>15</strong></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Мф. мощности урона (%) <b>+3</b><br />
+        Мф. парирования (%) +<strong>3</strong></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Наручи</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Мф. мощности урона (%) <b>+1</b><br />
+        Мф. парирования (%) +<strong>1</strong></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Мф. мощности урона (%) <b>+2</b><br />
+        Мф. против увертывания (%) <b>+25</b><br />
+        Мф. парирования (%) +<strong>2</strong></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Мф. парирования (%) +<strong>3</strong></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Одежда: Пояса</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +10<br />
+        Защита от урона <b>+5</b><br />
+        Защита от магии <b>+5</b><br />
+        Броня пояса +7</td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Защита от урона <b>+11</b><br />
+        Защита от магии <b>+11</b></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Защита от магии <b>+16</b><br />
+        Защита от урона <b>+16</b><br />
+        Броня пояса <b>+22</b></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="tab5" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="80%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;" >
+  <tbody >
+    <tr>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_1_1.gif" alt="" border="0" style="    vertical-align: middle;" /><strong> [1]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_1_2.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [2]</strong></td>
+      <td width="33%" align="center"><img src="http://img.primebk.ru/i/items/enh_1_3.gif" alt="" border="0" style="    vertical-align: middle;"/><strong> [3]</strong></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Ювелирные товары: Серьги</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Мф. мощности урона (%) <b>+1</b><br />
+        Уровень жизни (HP) +10<br />
+        Мф. увертывания (%) +15<br />
+        Мф. против увертывания (%) +15<br />
+        Мф. контрудара (%) <b>+2</b><br />
+        Защита от урона <b>+5</b><br />
+        Защита от магии <b>+5</b></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Мф. мощности урона (%) <b>+2</b><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Мф. парирования (%) <b>+2</b><br />
+        Мф. блока щитом (%) <b>+3</b><br />
+        Защита от магии <b>+11</b><br />
+        Защита от урона <b>+11</b></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Мф. мощности урона (%) <b>+3</b><br />
+        Мф. парирования (%) <b>+3</b><br />
+        Защита от магии <b>+16</b><br />
+        Защита от урона <b>+16</b></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Ювелирные товары: Ожерелья</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +10<br />
+        Мф. мощности урона (%) <b>+1</b><br />
+        Мф. против увертывания (%) +10<br />
+        Мф. парирования (%) <b>+1</b><br />
+        Мф. контрудара (%) <b>+2</b><br />
+        Защита от магии <b>+5</b><br />
+        Защита от урона <b>+5</b></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Мф. мощности урона (%) <b>+2</b><br />
+        Мф. мощности крит. удара (%) <b>+2</b><br />
+        Мф. парирования (%) <b>+2</b><br />
+        Мф. контрудара (%): <b>+2</b><br />
+        Защита от урона <b>+11</b><br />
+        Защита от магии <b>+11</b></td>
+      <td align="center">Сила <b>+3</b><br />
+        Интуиция <b>+3</b><br />
+        Ловкость <b>+3</b><br />
+        Интеллект <b>+3</b><br />
+        Мф. мощности урона (%) <b>+3</b><br />
+        Мф. парирования (%) <b>+3</b><br />
+        Мф. против критического удара (%) <b>+35</b><br />
+        Защита от магии <b>+16</b><br />
+        Защита от урона <b>+16</b></td>
+    </tr>
+    <tr style="background:#EDD7AE">
+      <td colspan="3" align="center"><strong>Ювелирные товары: Кольца</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><em><strong>Не работает</strong></em></td>
+      <td align="center">Сила <b>+1</b><br />
+        Интуиция <b>+1</b><br />
+        Ловкость <b>+1</b><br />
+        Интеллект <b>+1</b><br />
+        Уровень жизни (HP) +10 НР<br />
+        Мф. парирования (%) <b>+1</b><br />
+        Мф. мощности урона (%) <b>+1</b><br />
+        Защита от магии <b>+5</b><br />
+        Защита от урона <b>+5</b></td>
+      <td align="center">Сила <b>+2</b><br />
+        Интуиция <b>+2</b><br />
+        Ловкость <b>+2</b><br />
+        Интеллект <b>+2</b><br />
+        Уровень жизни (HP) <b>+25</b><br />
+        Мф. парирования (%) <b>+2</b><br />
+        Мф. мощности урона (%) <b>+2</b><br />
+        Защита от магии <b>+11</b><br />
+        Защита от урона <b>+11</b></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+</div></td></tr>
+
+<script type="text/javascript" src="js/tabs.js"></script>

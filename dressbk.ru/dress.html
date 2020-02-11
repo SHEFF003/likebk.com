@@ -1,0 +1,193 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title>Примерочная likebk</title>
+<link rel="stylesheet" type="text/css" href="style15.css" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="Distribution" content="Global" />
+<meta name="Classification" content="non-profit" />
+<meta name="Resource-type" content="application" />
+<meta name="Rating" content="Safe for Kids" />
+<meta name="Author" content="ландыши" />
+<meta name="Language" content="ru" />
+<meta name="save" content="favorite" />
+<script src="menu.js" language="javascript" type="text/javascript"></script>
+<script src="dresti.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+<div id="popupDiv" style="position: absolute; left: 0px; top: 1px; border: solid 1px infotext; background-color: infobackground; color: infotext; padding: 2px; z-index: 20; visibility: hidden; filter: alpha(opacity = 85, style = 4), blendtrans(duration = 0.3) progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=1); font-size: 8pt"></div>
+<div style="width: 400px; position:absolute; visibility:hidden;z-index:2;background-color:white; border: none 0px black;filter: alpha(opacity = 95, style = 4)" id="dcInfoSpaceOutput"></div>
+<div id="menuDiv" onclick="onMenuClick()" onlosecapture="hideMenuCore()" style="position: absolute; border: solid 1px black; background-color: white; color: black; padding: 2px; z-index: 9; visibility: hidden; filter: alpha(opacity = 92, style = 4), blendtrans(duration = 0.2) progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=2); font-size: 12pt"></div>
+<div id="pmenuDiv" onclick="onMenuClick()" onlosecapture="hideMenuCore()" style="position: absolute; border: solid 1px black; background-color: white; color: black; padding: 2px; z-index: 9; visibility: hidden; filter: alpha(opacity = 92, style = 4), blendtrans(duration = 0.2) progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=2); font-size: 12pt"></div>
+<div id="header">
+&nbsp;
+</div><div id="menu">
+  <ul id="nav">
+   <li class="activeLink"><a href="javascript:;">Примерочная</a></li>
+   <li><a target="_self" href="/">Домой</a></li>
+  </ul>
+</div>
+<div id="content">
+<input class="savefav" type="hidden" id="favstore" name="favstore" value="" onsave="saveFav()" onload="loadFav()" /> <input class="userdata" type="hidden" id="historystore" name="historystore" value="" />
+<input class="userdata" type="hidden" id="offlinecookie" name="offlinecookie" value="" />
+<div id="infoDiv" style="font-size: xx-small" onclick="showDressHint()" title="Щёлкните здесь, чтобы увидеть один из советов по работе с нашей Примерочной."></div>
+<!--
+<div class="hintview" style="padding: 8px 8px 8px 8px">Хорошие новости: Примерочная восстановлена. Плохие новости: Все комплекты, сохранённые на сервере, восстановлению не подлежат.</div>
+-->
+
+<div id="dressCabs">
+<div style="width: 100%; font-weight: bold; text-align: center; padding: 8px 8px 8px 8px"><img src="loading_anim.gif" width="200" height="80" border="0" align="right" />Пожалуйста, подождите, пока загружается Примерочная...<br /><br /><small>Если Примерочная не загружается, нажмите <kbd>Ctrl+F5</kbd>, или почистите кэш временных файлов Вашего браузера Internet.</small></div>
+<div style="width: 100%; text-align: center; padding: 8px 8px 8px 8px"><a href="javascript:;" class="TLink" onclick="doClean()">Очистить все данные</a></div>
+</div>
+
+<hr size="1" noshade="noshade" />
+<p>
+Рекомендуемые браузеры для работы с Примерочной: <samp>Microsoft Internet Explorer 6.0</samp>, <samp>Microsoft Internet Explorer 5.5</samp>.<br />
+Примерочная также проверена и работоспособна в браузерах: <samp>Mozilla FireFox 1.5</samp>, <samp>Opera 8.5</samp>.<br />
+Пока только на платформе MSIE поддерживаются визуальные эффекты анимации, визуальные эффекты состояния предметов. Также только на платформе MSIE Примерочная запоминает состояние кабинок между сессиями и в фаворитах.
+</p>
+
+<a class="TLink" href="#" target="_self" onclick="window.scrollTo(0); return false">Вверх</a>
+
+<div id="helpDiv" style="display: none">
+<div id="helpDivContent">&nbsp;</div>
+
+<a class="TLink" href="#" target="_self" onclick="window.scrollTo(0); return false">Вверх</a></div>
+
+<h4>Авторские права</h4>
+<p>Все права на данный продукт и на использованную символику принадлежат <b><img src="http://img.combats.ru/i/klan/DarkClan.gif" width="24" height="15" border="0" />DarkClan</b>.
+</p>
+<p>Доработал  <b>Assault of Magic</b> <img src="/new/inf.gif"  />
+</p>
+
+<script type="text/javascript" src="http://qooi.ru/counter.js"></script>
+
+</div>
+
+<script language="javascript" type="text/javascript">
+<!--
+var dresScripts = {
+	dcacommon: false,
+	dresdefs: false,
+	drestpl: false,
+	dresitms: false,
+	expd: false,
+	pets: false,
+	tricks: false,
+	infospace: false
+	};
+var dresInitialized = false;
+
+function onScriptLoaded(really)
+{
+	if (dresInitialized)
+	{
+		return;
+	}
+	var elt = null;
+	if (!really && window.event && window.event.srcElement)
+	{
+		elt = window.event.srcElement;
+		if (elt.readyState != 'complete' && elt.readyState != 4)
+		{
+			return;
+		}
+	}
+	if (elt == null)
+	{
+		return;
+	}
+	dresScripts[elt.id] = true;
+	var ok = true;
+	var dcount = 0;
+	for (var sid in dresScripts)
+	{
+		if (!dresScripts[sid])
+		{
+			ok = false;
+		}
+		else
+		{
+			dcount++;
+		}
+	}
+	var msg = 'Загружено ' + dcount + ' модулей из 8 необходимых, загрузка продолжается...';
+	window.status = msg;
+	informAboutProgress(msg);
+	if (ok)
+	{
+		if (window.status) window.status = '';
+		onDresserLoaded();
+	}
+}
+
+function onDresserLoaded()
+{
+	if (dresInitialized)
+	{
+		return;
+	}
+	window.status = '';
+	dressOptions.embeddedMode = false;
+	prepareMenu();
+	prepareOfflineMode();
+	localizer.here = '<span style="text-decoration: underline;">' + localizer.here + '</span>';
+	initializeDresserAfterItemsLoaded();
+
+// load acquired sets by server if required.
+// %%DRESSSETUP%%
+
+	readOptions();
+	createCab();
+
+	document.getElementById('dcframe').innerHTML = getOfflineDresserFrameHtml();
+	setInterval("updatePanelChannels()", 60 * 60 * 1000);
+	setTimeout("updatePanelChannels()", 3 * 1000);
+}
+
+function delayedDresserLoad()
+{
+// another way to init if script's onload not fired.
+if (!dresInitialized)
+{
+//	alert('tricky loading');
+	setTimeout('onDresserLoaded()', 100);
+}
+}
+
+window.onload = delayedDresserLoad;
+
+function doNothing()
+{
+}
+
+function doClean()
+{
+	window.onunload = doNothing;
+	window.location.href = window.location.href;
+}
+
+// -->
+</script>
+	
+<div id="left">
+<script language="javascript" type="text/javascript">
+placePanelChannels();
+</script>
+</div>
+</div>
+<center>
+<div </div>
+</center>
+<script id="dcacommon" language="javascript" type="text/javascript" src="dcacommon.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="tricks" language="javascript" type="text/javascript" src="tricks.js" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
+<script id="dresdefs" language="javascript" type="text/javascript" src="dresdefs.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="dresitms" language="javascript" type="text/javascript" src="dresitms.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="expd" language="javascript" type="text/javascript" src="expd.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="pets" language="javascript" type="text/javascript" src="pets.js" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
+<script id="infospace" src="jshttp.js" type="text/javascript" language="javascript" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
+<script id="drestpl" language="javascript" type="text/javascript" src="drestpl2.js" onreadystatechange="onScriptLoaded()" defer></script>
+</body>
+</html>
+

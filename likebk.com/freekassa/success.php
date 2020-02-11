@@ -1,0 +1,1 @@
+<?php header('Location: ../buttons.php?bill=1&success=1');?>

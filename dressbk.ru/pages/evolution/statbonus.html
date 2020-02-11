@@ -1,0 +1,416 @@
+<link rel="stylesheet" href="css/tabs.css" type="text/css">
+
+  <tr >                                    
+ <td align="left" valign="middle" class="leftItemTDnb">
+ <h3>Бонусы Статов</h3>
+ <div class="pagesMainStyle">
+  <strong>Статы</strong><br><br>
+  Способности, в быту — «<strong>статы</strong>», — основная, после уровня, характеристика персонажа. <br>
+  Сначала персонаж имеет четыре вида статов — <strong>Сила</strong>, <strong>Ловкость</strong>, <strong>Интуиция</strong>, <strong>Выносливость</strong>.<br> Каждые 3 уровня, начиная с 4-го, появляются новые виды статов: <strong>Интеллект</strong> (4-й уровень), <strong>Мудрость</strong> (7-й уровень), <strong>Духовность</strong> (10-й уровень) и  <strong>Воля</strong> (12-й уровень).<br>
+  Когда развитие характеристики достигает определенного значения, персонаж получает бонус. Чем выше развита характеристика, тем значительнее награда за это.<br>
+   Посмотреть все текущие бонусы можно в разделе "<strong>Умения</strong>" <strong>></strong> "<strong>Состояние</strong>".<br>
+За каждые <strong>25</strong>, <strong>50</strong>, <strong>75</strong>, <strong>100</strong>, <strong>125</strong>, <strong>150</strong>, <strong>175</strong> статов игрок также получает некоторые бонусы.<br>
+<br>
+Влияние статов на способности персонажа и его модификаторы, а также бонусы указаны в таблицах ниже. <br>
+<div class="tab" style="margin-top:15px">
+  <button class="tablinks" onclick="chahgeTab(event, 'tab1')"  id="defaultOpen">Сила</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab2')">Ловкость</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab3')">Интуиция</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab4')">Выносливость</button>
+    <button class="tablinks" onclick="chahgeTab(event, 'tab5')">Интеллект </button>
+      <button class="tablinks" onclick="chahgeTab(event, 'tab6')">Мудрость</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab7')">Духовность </button>
+</div>
+
+<div id="tab1" class="tabcontent">
+<br clear="all">
+ <table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td><strong>Статы</strong> </td>
+      <td><strong>Бонус</strong></td>
+    </tr>
+    <tr>
+      <td>Сила = <strong>25</strong></td>
+      <td><strong>Сила Гиганта:</strong><br>
+        - Мф. мощности урона (%): <strong>+5</strong></td>
+    </tr>
+    <tr>
+      <td>Сила = <strong>50</strong></td>
+      <td><strong>Сила Гиганта:</strong><br>
+        - Мф. мощности урона (%): <strong>+10</strong></td>
+    </tr>
+    <tr>
+      <td>Сила = <strong>75</strong></td>
+      <td><strong>Сила Гиганта:</strong><br>
+        - Мф. мощности урона (%): <strong>+17</strong></td>
+    </tr>
+    <tr>
+      <td>Сила = <strong>100</strong></td>
+      <td><strong>Сила Гиганта:</strong><br>
+        - Мф. мощности урона (%): <strong>+25</strong></td>
+    </tr>
+    <tr>
+      <td>Сила = <strong>125</strong></td>
+      <td><strong>Сила Гиганта:</strong><br>
+        - Мф. мощности урона (%): <strong>+25</strong><br>
+        - Минимальный урон: <strong>+10</strong><br>
+        - Максимальный урон: <strong>+10</strong></td>
+    </tr>
+    <tr>
+      <td>Сила = <strong>150</strong></td>
+      <td><strong>Сила Гиганта:</strong><br>
+        - Мф. мощности урона (%): <strong>+30</strong><br>
+        - Минимальный урон: <strong>+10</strong><br>
+        - Максимальный урон: <strong>+10</strong><br>
+       
+    </tr>
+    <tr>
+      <td>Сила = <strong>175</strong></td>
+      <td><strong>Сила Гиганта:</strong><br>
+        - Мф. мощности урона (%): <strong>+30</strong><br>
+        - Минимальный урон: <strong>+15</strong><br>
+        - Максимальный урон: <strong>+15</strong><br>
+        
+    </tr> 
+	
+  </tbody>
+</table>
+
+</div>
+
+<div id="tab2" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td><strong>Статы</strong></td>
+      <td><strong>Бонус</strong></td>
+    </tr>
+    <tr>
+      <td>Ловкость = <strong>25</strong></td>
+      <td><strong>Скорость Змеи:</strong><br>
+        - Мф. парирования (%): <strong>+5</strong></td>
+    </tr>
+    <tr>
+
+      <td>Ловкость = <strong>50</strong></td>
+      <td><strong>Скорость Змеи:</strong><br>
+        - Мф. парирования (%): <strong>+5</strong><br>
+        - Мф. против критического удара (%): <strong>+15</strong><br>
+        - Мф. увертывания (%): <strong>+35</strong></td>
+    </tr>
+    <tr>
+      <td>Ловкость = <strong>75</strong></td>
+      <td><strong>Скорость Змеи:</strong><br>
+        - Мф. парирования (%): <strong>+15</strong><br>
+        - Мф. против критического удара (%): <strong>+15</strong><br>
+        - Мф. увертывания (%): <strong>+35</strong></td>
+    </tr>
+    <tr>
+      <td>Ловкость = <strong>100</strong></td>
+      <td><strong>Скорость Змеи:</strong><br>
+        - Мф. парирования (%): <strong>+15</strong><br>
+        - Мф. против критического удара (%): <strong>+40</strong><br>
+        - Мф. увертывания (%): <strong>+105</strong></td>
+    </tr>
+    <tr>
+      <td>Ловкость = <strong>125</strong></td>
+      <td><strong>Скорость Змеи:</strong><br>
+        - Мф. парирования (%): <strong>+15</strong><br>
+        - Мф. против критического удара (%): <strong>+40</strong><br>
+        - Мф. увертывания (%): <strong>+105</strong><br>
+        - Абс. мф. увертывания (%):<strong> +5</strong></td>
+    </tr>
+    <tr>
+      <td>Ловкость = <strong>150</strong></td>
+      <td><strong>Скорость Змеи:</strong><br>
+        - Мф. парирования (%): <strong>+15</strong><br>
+        - Мф. против критического удара (%): <strong>+40</strong><br>
+        - Мф. увертывания (%): <strong>+105</strong><br>
+        - Абс. мф. увертывания (%): <strong>+5</strong><br>
+       
+    </tr>
+    <tr>
+      <td>Ловкость = <strong>175</strong></td>
+      <td><strong>Скорость Змеи:</strong><br>
+        - Мф. парирования (%): +20 (%): <strong>+22</strong><br>
+        - Мф. против критического удара (%): <strong>+50</strong><br>
+        - Мф. увертывания (%): <strong>+120</strong><br>
+        - Абс. мф. увертывания (%): <strong>+7</strong><br>
+        
+    </tr>
+        
+  </tbody>
+</table>
+</div>
+
+<div id="tab3" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td><strong>Статы</strong></td>
+      <td><strong>Бонус</strong></td>
+    </tr>
+    <tr>
+      <td>Интуиция = <strong>25</strong></td>
+      <td><strong>Предчувствие:</strong><br>
+        - Мф. мощности крит. удара (%): <strong>+10</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интуиция = <strong>50</strong></td>
+      <td><strong>Предчувствие:</strong><br>
+        - Мф. мощности крит. удара (%):<strong> +10</strong><br>
+        - Мф. критического удара (%): <strong>+35</strong><br>
+        - Мф. против увертывания (%): <strong>+15</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интуиция = <strong>75</strong></td>
+      <td><strong>Предчувствие:</strong><br>
+        - Мф. мощности крит. удара (%):<strong> +25</strong><br>
+        - Мф. критического удара (%): <strong>+35</strong><br>
+        - Мф. против увертывания (%): <strong>+15</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интуиция = <strong>100</strong></td>
+      <td><strong>Предчувствие:</strong><br>
+        - Мф. мощности крит. удара (%):<strong> +25</strong><br>
+        - Мф. критического удара (%): <strong>+105</strong><br>
+        - Мф. против увертывания (%): <strong>+45</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интуиция = <strong>125</strong></td>
+      <td><strong>Предчувствие:</strong><br>
+        - Мф. мощности крит. удара (%):<strong> +25</strong><br>
+        - Мф. критического удара (%): <strong>+105</strong><br>
+        - Мф. против увертывания (%): <strong>+45</strong><br>
+        - Абс. Мф. крит. удара: <strong>+5</strong><br>
+    </tr>
+    <tr>
+      <td>Интуиция = <strong>150</strong></td>
+      <td><strong>Предчувствие:</strong><br>
+        - Мф. мощности крит. удара (%):<strong> +30</strong><br>
+        - Мф. критического удара (%): <strong>+105</strong><br>
+        - Мф. против увертывания (%): <strong>+45</strong><br>
+        
+        - Абс. Мф. крит. удара: <strong>+5</strong><br>
+        - Интуиция: <strong>+5</strong></td>
+    </tr>
+    <tr>
+      <td>Интуиция = <strong>175</strong></td>
+      <td><strong>Предчувствие:</strong><br>
+        - Мф. мощности крит. удара (%):<strong> +30</strong><br>
+        - Мф. критического удара (%): <strong>+120</strong><br>
+        - Мф. против увертывания (%): <strong>+45</strong><br>
+        - Абс. Мф. крит. удара: <strong>+7</strong><br>
+        - Интуиция: <strong>+5</strong></td>
+    </tr>
+        
+  </tbody> 
+</table>
+
+</div>
+<div id="tab4" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td><strong>Статы</strong></td>
+      <td><strong>Бонус</strong></td>
+    </tr>
+    <tr>
+      <td>Выносливость = <strong>25</strong></td>
+      <td><strong>Стальное Тело:</strong><br>
+        - Уровень жизни: <strong>+50</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Выносливость = <strong>50</strong></td>
+      <td><strong>Стальное Тело:</strong><br>
+        - Уровень жизни: <strong>+100</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Выносливость = <strong>75</strong></td>
+      <td><strong>Стальное Тело:</strong><br>
+        - Уровень жизни: <strong>+175</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Выносливость = <strong>100</strong></td>
+      <td><strong>Стальное Тело:</strong><br>
+        - Уровень жизни: <strong>+250</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Выносливость = <strong>125</strong></td>
+      <td><strong>Стальное Тело:</strong><br>
+        - Уровень жизни: <strong>+250</strong><br>
+        - Защита от урона: <strong>+25</strong><br>
+		
+    </tr>
+    <tr>
+      <td>Выносливость = <strong>150</strong></td>
+      <td><strong>Стальное Тело:</strong><br>
+        - Уровень жизни: <strong>+350</strong><br>
+        - Защита от урона: <strong>+50</strong><br>
+		
+    </tr>
+    <tr>
+      <td>Выносливость = <strong>175</strong></td>
+      <td><strong>Стальное Тело:</strong><br>
+        - Уровень жизни: <strong>+400</strong><br>
+        - Защита от урона: <strong>+100</strong><br>
+		
+    </tr>
+        
+  </tbody>
+</table> 
+
+</div>
+<div id="tab5" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0"  style="margin: 25px 10px;">
+  <tbody>
+    <tr  style="background:#EDD7AE">
+      <td><strong>Статы</strong></td>
+      <td><strong>Бонус</strong></td>
+    </tr>
+    <tr>
+      <td>Интеллект = <strong>25</strong></td>
+      <td><strong>Ледяной Разум:</strong><br>
+        - Мощность магии стихий (%): <strong>+5</strong><br>
+       
+    </tr>
+    <tr>
+      <td>Интеллект = <strong>50</strong></td>
+      <td><strong>Ледяной Разум:</strong><br>
+        - Мощность магии стихий (%): <strong>+10</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интеллект = <strong>75</strong></td>
+      <td><strong>Ледяной Разум:</strong><br>
+        - Мощность магии стихий (%): <strong>+17</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интеллект = <strong>100</strong></td>
+      <td><strong>Ледяной Разум:</strong><br>
+        - Мощность магии стихий (%): <strong>+25</strong><br>
+       
+    </tr>
+    <tr>
+      <td>Интеллект = <strong>125</strong></td>
+      <td><strong>Ледяной Разум:</strong><br>
+        - Мощность магии стихий (%): <strong>+35</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интеллект = <strong>150</strong></td>
+      <td><strong>Ледяной Разум:</strong><br>
+        - Мощность магии стихий (%): <strong>+45</strong><br>
+        
+    </tr>
+    <tr>
+      <td>Интеллект = <strong>175</strong></td>
+      <td><strong>Ледяной Разум:</strong><br>
+        - Мощность магии стихий (%): <strong>+60</strong><br>
+        
+    </tr>    
+  </tbody>
+</table> 
+
+</div>
+<div id="tab6" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td><strong>Статы</strong></td>
+      <td><strong>Бонус</strong></td>
+    </tr>
+    <tr>
+      <td>Мудрость = <strong>25</strong></td>
+      <td><strong>Касание&nbsp; Мудрости:</strong><br>
+        - Уровень маны: <strong>+50</strong><br>
+        - Восстановление маны (%): <strong>+100</strong></td>
+    </tr>
+    <tr>
+      <td>Мудрость = <strong>50</strong></td>
+      <td><strong>Касание&nbsp; Мудрости:</strong><br>
+        - Уровень маны: <strong>+100</strong><br>
+        - Восстановление маны (%): <strong>+200</strong></td>
+    </tr>
+    <tr>
+      <td>Мудрость = <strong>75</strong></td>
+      <td><strong>Касание&nbsp; Мудрости:</strong><br>
+        - Уровень маны: <strong>+175</strong><br>
+        - Восстановление маны (%): <strong>+350</strong></td>
+    </tr>
+    <tr>
+      <td>Мудрость = <strong>100</strong></td>
+      <td><strong>Касание Мудрости:</strong><br>
+        - Уровень маны: <strong>+250</strong><br>
+        - Восстановление маны (%): <strong>+500</strong></td>
+    </tr>
+    <tr>
+      <td>Мудрость = <strong>125</strong></td>
+      <td><strong>Касание Мудрости:</strong><br>
+        - Уровень маны:<strong> +250</strong><br>
+        - Восстановление маны (%): <strong>+500</strong><br>
+        - Подавление от магии: <strong>+3</strong></td>
+    </tr>
+    <tr>
+      <td>Мудрость = <strong>150</strong></td>
+      <td><strong>Касание Мудрости:</strong><br>
+        - Уровень маны: <strong>+300</strong><br>
+        - Восстановление маны (%): <strong>+600</strong><br>
+        - Подавление от магии: <strong>+3</strong></td>
+    </tr>
+    <tr>
+      <td>Мудрость = <strong>175</strong></td>
+      <td><strong>Касание Мудрости:</strong><br>
+        - Уровень маны: <strong>+350</strong><br>
+        - Восстановление маны (%): <strong>+700</strong><br>
+        - Подавление от магии: <strong>+5</strong></td>
+    </tr>
+	
+  </tbody>
+</table> 
+
+</div>
+<div id="tab7" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr  style="background:#EDD7AE">
+      <td width="19%"><strong>Статы</strong></td>
+      <td width="81%"><strong>Бонус</strong></td>
+    </tr>
+    <tr>
+      <td>Духовность = <strong>25</strong></td>
+      <td><strong>Духовная Защита:</strong><br>
+        - Жизнь после смерти дает вам прием "Призрачная Защита" <img src="http://img.likebk.com/i/eff/spirit_block25.gif" alt="" width="30"></td>
+    </tr>
+        <tr>
+      <td>Духовность = <strong>50</strong></td>
+      <td><strong>Духовное Исцеление:</strong><br>
+        - Жизнь после смерти дает вам прием "Призрачная Защита"<img src="http://img.likebk.com/i/eff/spirit_block25.gif" alt="" width="30"><br>
+        - Каждый бой вы начинаете под действием магии "Спасение"&nbsp;<img src="http://img.likebk.com/i/eff/preservation.gif" alt="" width="30"></td>
+    </tr>
+       
+        
+  </tbody>
+</table>
+
+</div>
+
+</div></td></tr>
+
+<script type="text/javascript" src="js/tabs.js"></script>

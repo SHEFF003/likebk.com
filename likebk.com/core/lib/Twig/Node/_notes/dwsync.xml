@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AutoEscape.php" server="81.16.141.210" local="132024265719251574" remote="131553396000000000" Dst="0" />
+<file name="Block.php" server="81.16.141.210" local="132024265719751043" remote="131553396000000000" Dst="0" />
+<file name="BlockReference.php" server="81.16.141.210" local="132024265719761286" remote="131553396000000000" Dst="0" />
+<file name="Body.php" server="81.16.141.210" local="132024265722049789" remote="131553396000000000" Dst="0" />
+<file name="Do.php" server="81.16.141.210" local="132024265722049789" remote="131553396000000000" Dst="0" />
+<file name="Embed.php" server="81.16.141.210" local="132024265722239622" remote="131553396000000000" Dst="0" />
+<file name="Expression.php" server="81.16.141.210" local="132024265766434478" remote="131553396000000000" Dst="0" />
+<file name="ForLoop.php" server="81.16.141.210" local="132024265768733137" remote="131553396000000000" Dst="0" />
+<file name="For.php" server="81.16.141.210" local="132024265768733137" remote="131553396000000000" Dst="0" />
+<file name="Flush.php" server="81.16.141.210" local="132024265768933080" remote="131553396000000000" Dst="0" />
+<file name="If.php" server="81.16.141.210" local="132024265771331662" remote="131553396000000000" Dst="0" />
+<file name="Import.php" server="81.16.141.210" local="132024265771341653" remote="131553396000000000" Dst="0" />
+<file name="Include.php" server="81.16.141.210" local="132024265771531527" remote="131553396000000000" Dst="0" />
+<file name="Print.php" server="81.16.141.210" local="132024265774229984" remote="131553396000000000" Dst="0" />
+<file name="Macro.php" server="81.16.141.210" local="132024265774429875" remote="131553396000000000" Dst="0" />
+<file name="Module.php" server="81.16.141.210" local="132024265774629756" remote="131553396000000000" Dst="0" />
+<file name="SandboxedModule.php" server="81.16.141.210" local="132024265776338800" remote="131553396000000000" Dst="0" />
+<file name="SandboxedPrint.php" server="81.16.141.210" local="132024265776528684" remote="131553396000000000" Dst="0" />
+<file name="Sandbox.php" server="81.16.141.210" local="132024265776758561" remote="131553396000000000" Dst="0" />
+<file name="Set.php" server="81.16.141.210" local="132024265778437599" remote="131553396000000000" Dst="0" />
+<file name="SetTemp.php" server="81.16.141.210" local="132024265778637474" remote="131553396000000000" Dst="0" />
+<file name="Spaceless.php" server="81.16.141.210" local="132024265778867346" remote="131553396000000000" Dst="0" />
+<file name="Text.php" server="81.16.141.210" local="132024265780846223" remote="131553396000000000" Dst="0" />
+</dwsync>

@@ -1,0 +1,26 @@
+.linestl1 {
+	background-color: #E2E0E0;
+	font-size: 10px;
+	font-weight: bold;
+}
+.mroinv {
+	/*background-color:#e2e2e2;border-top:1px solid #eeeeee;border-left:1px solid #eeeeee;border-right:1px solid #a0a0a0;border-bottom:1px solid #a0a0a0;*/
+	background:url(http://img.likebk.com/i/back.gif) 0 2px;
+}
+.mroinv img {
+	display:inline-block;
+	border:0;
+	padding-top:3px;
+	padding-left:1px;
+}
+.dot {
+	display:block;
+	padding-bottom:2px;
+    text-decoration: none; /* Убираем подчеркивание */
+    border-bottom: 1px dotted #080808; /* Добавляем свою линию */
+	cursor:pointer;
+}
+.dot:hover {
+    border-bottom: 1px dotted #080808; /* Добавляем свою линию */
+	background-color:#BEBEBE;
+}

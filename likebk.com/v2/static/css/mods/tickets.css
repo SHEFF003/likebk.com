@@ -1,0 +1,83 @@
+.pgpg1 {
+	display:inline-block;
+	padding:5px;
+	border:1px solid #ccc;
+	text-align:center;
+	cursor:pointer;
+}
+
+.pgpg1:hover {
+	background-color:#ccc;
+}
+
+.pgpg2 {
+	display:inline-block;
+	padding:5px;
+	border:1px solid #fff;
+	background-color:#eee;
+	text-align:center;
+	cursor:pointer;
+}
+
+.pgpg2:hover {
+	background-color:#ccc;
+}
+
+.tk_menu1 {
+	padding-top:15px;
+}
+
+.tk_menu1 a {
+	display:block;
+	padding:5px 15px 5px 15px;
+	background-color:#d0d0d0;
+}
+
+.tk_menu1 a:hover {
+	background-color:#CCC;
+	border:1px solid #eee;
+	padding:4px 14px 4px 14px;
+}
+
+.tk_ticket {
+	display:block;
+	padding:5px 15px 5px 15px;
+	cursor:pointer;
+	border-bottom:1px solid #ccc;
+	border-radius:5px;
+}
+
+.tk_ticket:hover {
+	background-color:#d0d0d0;
+	border:1px solid #eee;
+	padding:4px 14px 5px 14px;
+}
+
+.tk_ticket2 {
+	display:block;
+	padding:5px 15px 5px 15px;
+	cursor:pointer;
+	border-bottom:1px solid #aec99c;
+	background-color:#f1f4ec;
+	border-radius:5px;
+}
+
+.tk_ticket2:hover {
+	background-color:#a2c67f;
+	border:1px solid #d7e9c3;
+	padding:4px 14px 5px 14px;
+}
+
+.tk_blockin {
+	background-color:#CCC;
+	border-radius:5px;
+	padding:20px;
+	margin-bottom:10px;
+}
+
+.tk_box1 {
+	background-color:#CCC;
+	border-radius:5px;
+	padding:20px;
+	margin-bottom:10px;
+}

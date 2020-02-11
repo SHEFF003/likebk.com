@@ -1,0 +1,314 @@
+<link rel="stylesheet" href="css/tabs.css" type="text/css">
+<tr >                                    
+ <td align="left" valign="middle" class="leftItemTDnb">
+ <h3>Башня Смерти</h3>
+ <div class="pagesMainStyle">
+   <p><strong>Башня Смерти </strong> <img src="http://img.primebk.ru/loca/leg_loc/strahilkina/bs_day.png" alt="" width="50px" /> находится на улице "<strong>Страшилкиной улице</strong>",<br /> 
+     сама башня собой представляет турнир на выживание, пока не останется 1 победитель, который и получает опыт и призовой фонд. <br /><br />
+Участвовать в турнире может любой персонаж 7го – 12го уровня, который внёс стартовый взнос в турнир.<br>
+Если после подачи заявки на участие, вы покинете Башню Смерти, то кредиты не вернут. <br />
+<br />
+Когда вы делаете стартовый взнос, вам выдается чистый перс с нераспределенными статами и умениями. Уровень его не всегда зависит от уровня БС, теперь он рэндомный. Если заявка изначально была для девяток, то на турнире все вполне могут оказаться семерками. Кроме того, у бота пропадают покупные приемы, список друзей, записанные комплекты, вещи и склонность (клановый значок остается). Если вы участвуете в заявке ниже своего уровня, то количество статов вашего бота приравнивается к последнему апу этого уровня. Если заявка вашего уровня, то остается ваш ап и пещерные статы.<br><br>
+Как только пришло указанное время и &quot;башня&quot; началась, вы получаете 2 минуты на распределение характеристик, пока ваш персонаж скован путами. Потом начинается самое интересное - погоня за вещами, которые разбросаны по  башне. А также за теми, которые лежат в сундуках (некоторые индивидуальные, то есть для каждого, некоторые - нет).<br><br>
+Кроме вас, поиском обмундирования занимаются и ваши противники (до 15 в одной БС, а если набирается больше, то участники делятся на 2 или больше групп рэндомно, то есть у каждой группы - свой турнир). <br />
+Мало того, по БС бродят три бота, которые нападают на всех подряд- Архивариус, Помощник Архивариуса и Младший помощник Архивариуса.<br><br>
+После победы над <strong>Архивариусом</strong> из него выпадает несколько вещей (из помощников ничего не падает). Это относится и к вашим противникам: если кого-то убить, то на клетке останутся вещи оппонента. Их может подобрать каждый, поэтому спешите! Хватайте сразу самые нужные, ведь задержка между поднятием шмотки- 5 секунд.<br>
+Что интересно, дерется каждый сам за себя, а не команда на команду. То есть, можно сказать, один против всех. У победителя поединка появляется иммунитет к нападениям на 1 минуту.   <br>
+Так же в здании БС, вы сможете найти магазин.<br /><br />
+<span style="font-size:23px;    color: #8f0000; margin:10px 0">Магазин Башни Смерти</span><br />
+<div class="tab" style="margin-top:15px">
+       <button class="tablinks" onclick="chahgeTab(event, 'tab1')"  id="defaultOpen">Предметы</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab2')">МФ</button>
+   <button class="tablinks" onclick="chahgeTab(event, 'tab3')">Дополнительные предметы</button>
+      <p>&nbsp;</p>
+</div>
+<div id="tab1" class="tabcontent">
+  <br clear="all">
+<table width="40%" border="1" cellpadding="0" cellspacing="0" id="op_tbl" style="margin: 0px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong></td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/novor.gif" alt=""></td>
+      <td ><p><strong>Защита от вора  </strong> (Масса: 0.01)<br />
+        <strong>Цена: 25.00</strong> кр.&nbsp;<br>
+Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x3 </strong><br>
+Долговечность: <strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>75%</strong><br>
+Продолжительность действия: <strong>1 ч.</strong><br>
+
+        <strong>Свойства предмета:</strong><br />
+        • Защищает вас от воров<br />
+        </p></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/v_s1.gif" alt=""></td>
+      <td ><p><strong>Украсть Силу </strong>&nbsp;(Масса: 0.01)<img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 25.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x3 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>50%</strong><br>
+        Задержка использования: 10 мин.&nbsp;<br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: 8<br>
+        <strong>Свойства предмета:</strong><br />
+&bull; Свиток ворует эффект&nbsp;<strong>"Нектар Великана"</strong>        <br />
+      </p></td>
+      </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/v_s2.gif" alt=""></td>
+      <td ><p><strong>Украсть Ловкость </strong>&nbsp;(Масса: 0.01)<img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 25.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x3 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>50%</strong><br>
+        Задержка использования: 10 мин.&nbsp;<br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: 8<br>
+        <strong>Свойства предмета:</strong><br />
+        &bull;Свиток ворует эффект&nbsp;<strong>"Нектар Змеи"</strong><br />
+      </p></td>
+      </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/v_s3.gif" alt=""></td>
+      <td ><p><strong>Украсть Предчувствие </strong>&nbsp;(Масса: 0.01)<img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 25.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x3 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>50%</strong><br>
+        Задержка использования: 10 мин.&nbsp;<br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: 8<br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Свиток ворует эффект&nbsp;<strong>"Нектар Предчувствия"</strong> <br />
+      </p></td>
+      </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/v_s5.gif" alt=""></td>
+      <td ><p><strong>Украсть Разум </strong>&nbsp;(Масса: 0.01)<img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 25.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x3 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>50%</strong><br>
+        Задержка использования: 10 мин.&nbsp;<br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: 8<br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Свиток ворует эффект&nbsp;<strong>"Нектар Разума"</strong> <br />
+      </p></td>
+        </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/no_sian.gif" alt=""></td>
+      <td ><p><strong>Украсть Сияние </strong>&nbsp;(Масса: 0.01)<img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 25.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x5 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>50%</strong><br>
+        Задержка использования: 10 мин.&nbsp;<br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: 9<br>
+        <strong>Свойства предмета:</strong><br />
+        &bull;Свиток ворует эффект&nbsp;<strong>"Звездное Сияние"</strong><br />
+      </p></td>
+        </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/noose.gif" alt=""></td>
+      <td ><p><strong>Заклятие Арканы </strong>&nbsp;(Масса: 0.01)<br />
+        <strong>Цена: 20.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x10 </strong><br>
+        Долговечность:&nbsp;<strong>неразрушимо</strong>&nbsp;<br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Перемещает игрока в одну локацию с вами.<br />
+Не действует если персонаж находится в Общежитии или Подземелье</strong><br />
+      </p></td>
+        </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/chains.gif" alt=""></td>
+      <td ><p><strong>Путы </strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 20.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x2 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>50%</strong><br>
+        Задержка использования: 10 мин.&nbsp;<br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>4</strong><br>
+        &bull; Интеллект: <strong>6</strong> <br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Персонаж на которого использовали заклинание не может перемещаться 1-10 минут.</strong><br />
+      </p></td>
+        </tr>
+            <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/trap.gif" alt=""></td>
+      <td ><p><strong>Ловушка </strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 20.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x2 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>99%</strong><br>
+        Срок годности: <strong>6 ч.</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Вы размещаете в комнате ловушку которая обездвиживает на 1-10 мин., а так-же отнимает половину НР жертвы. (Не отнимает, если уровень НР жертвы красный)</strong><br />
+      </p></td>
+            </tr>
+            <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/off_hpVinos1.gif" alt=""></td>
+      <td ><p><strong>Украсть Жажду  </strong>&nbsp;(Масса: 0.01)<img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 55.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x4 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>50%</strong><br>
+        Задержка использования: 10 мин.&nbsp;<br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>8</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Свиток ворует эффект&nbsp;<strong>"Жажда Жизни"</strong><br />
+      </p></td>
+            </tr>
+  </tbody>
+</table>
+</div>
+<div id="tab2" class="tabcontent">
+<br clear="all">
+<table width="40%" border="1" cellpadding="0" cellspacing="0" id="op_tbl" style="margin: 0px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong></td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/bonusmf.gif" alt=""></td>
+      <td ><p><strong>Мф. против критического удара</strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 45.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x5 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        Продолжительность действия: <strong>2 ч.</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+&bull; Уровень: <strong>7</strong><br>
+<strong>Свойства предмета:</strong><br />
+&bull; Свиток наделяет персонажа <br>
+Мф. против критического удара (%):<strong> +100</strong><br />
+      </p></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/bonusmf.gif" alt=""></td>
+      <td ><p><strong>Мф.  критического удара</strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 45.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x5 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        Продолжительность действия: <strong>2 ч.</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>7</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Свиток наделяет персонажа <br>
+        Мф.  критического удара (%):<strong> +100</strong><br />
+      </p></td>
+      </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/bonusmf.gif" alt=""></td>
+      <td ><p><strong>Мф. против увертывания</strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 45.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x5 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        Продолжительность действия: <strong>2 ч.</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>7</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Свиток наделяет персонажа <br>
+        Мф. против увертывания (%):<strong> +100</strong><br />
+      </p></td>
+      </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/bonusmf.gif" alt=""></td>
+      <td ><p><strong>Мф. увертывания</strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 45.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x5 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        Продолжительность действия: <strong>2 ч.</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>7</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Свиток наделяет персонажа <br>
+        Мф. увертывания (%):<strong> +100</strong><br />
+      </p></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<div id="tab3" class="tabcontent">
+<br clear="all">
+<table width="40%" border="1" cellpadding="0" cellspacing="0" id="op_tbl" style="margin: 0px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong></td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/remdelayc3.gif" alt=""></td>
+      <td ><p><strong>Запрет на клан</strong>&nbsp;(Масса: 1) <img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 55.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x8 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>7</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull; Данный свиток, снимает задержку на вступление в клан<br />
+      </p></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/chesnok2.gif" alt=""></td>
+      <td ><p><strong>Чеснок (защита от вампиров) </strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 10.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x1 </strong><br>
+        Долговечность:&nbsp;<strong>0/40</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>1</strong><br />
+      </p></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/osinkol.gif" alt=""></td>
+      <td ><p><strong>Осиновый кол </strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 10.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x1 </strong><br>
+        Долговечность:&nbsp;<strong>0/20</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>1</strong><br>
+        &bull; Выносливость: <strong>8</strong><br />
+      </p></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/invoke_movespeed_dungeon60_5.gif" alt=""></td>
+      <td ><p><strong>Мягкая Поступь(15) </strong>&nbsp;(Масса: 1)<br />
+        <strong>Цена: 250.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x15 </strong><br>
+        Долговечность:&nbsp;<strong>0/1</strong><br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        Продолжительность действия: <strong>15 </strong>дн.<br>
+        <strong>Свойства предмета:</strong><br />
+        &bull;Уменьшает на 60% задержку перемещения в стандартных подземельях.<br>
+        Срок действия не замораживается во сне.<br />
+      </p></td>
+    </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/invoke_tactics5.gif" alt=""></td>
+      <td ><p><strong>Уникальная тактика +1</strong>&nbsp;(Масса: 1)<img src="http://img.primebk.ru/i/destiny0.gif" alt="" title="Этот предмет будет связан общей судьбой с первым, кто возьмет предмет. Никто другой не сможет его использовать."><br />
+        <strong>Цена: 40.00</strong> кр.&nbsp;<br>
+        Требует предмет: [<strong>Знак Победителя Башне Смерти</strong>] <strong>x2 </strong><br>
+        Долговечность:&nbsp;<strong>0/5</strong><br />
+        Вероятность срабатывания: <strong>100%</strong><br>
+        <strong>Свойства предмета:</strong><br />
+        &bull;Прибавляет +1 ко всем тактикам:<img src="http://img.primebk.ru/i/micro/hit.gif" alt="">&nbsp;<img src="http://img.primebk.ru/i/micro/krit.gif" alt="">&nbsp;<img src="http://img.primebk.ru/i/micro/counter.gif" alt="">&nbsp;<img src="http://img.primebk.ru/i/micro/block.gif" alt="">&nbsp;<img src="http://img.primebk.ru/i/micro/parry.gif" alt="">&nbsp;за&nbsp;<strong>1 ход</strong><br />
+      </p></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+ </div></td></tr>
+ <script type="text/javascript" src="js/tabs.js"></script>

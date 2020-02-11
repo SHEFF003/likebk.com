@@ -1,0 +1,17 @@
+@charset "windows-1251";
+/* CSS Document */
+
+.m { background: #99CCCC; text-align: center; cursor:pointer; }
+.s { background: #BBDDDD; text-align: center; cursor:pointer; }
+
+.m2 {
+	text-align: center;
+	background-color: #EAEAEA;
+	cursor: pointer;
+}
+.s2 {
+	text-align: center;
+	background-color: #EFEFEF;
+	cursor: pointer;
+}
+.m2:hover {	background-color: #CCCCCC; cursor:pointer;}

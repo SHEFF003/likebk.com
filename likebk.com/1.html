@@ -1,0 +1,53 @@
+<style>
+html , body {
+	background-color:#e2e0e0;
+}
+.box-thumb {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+	display:inline-block;
+    cursor: pointer;
+}
+.box-thumb img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+.box-thumb::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.box-thumb::before {
+    -webkit-animation: shine 2.85s infinite;
+    animation: shine 2.85s infinite;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+</style>
+<div class="box-thumb"> 
+	<img src="http://img.likebk.com/i/items/sergi2.gif">
+</div>

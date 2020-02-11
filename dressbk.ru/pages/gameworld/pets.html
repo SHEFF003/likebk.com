@@ -1,0 +1,206 @@
+<link rel="stylesheet" href="css/tabs.css" type="text/css">
+
+  <tr >                                    
+ <td align="left" valign="middle" class="leftItemTDnb">
+ <h3>Звери / Питомцы</h3>
+ <div class="pagesMainStyle">
+   <p>В&nbsp;<strong>Бойцовском Клубе</strong>&nbsp;каждый персонаж может завести себе&nbsp;<strong>питомца</strong>&nbsp;&mdash; зверя, который будет помогать в боях.<br />
+     <br />
+     Каждый зверь добавляет хозяину в бою определённые параметры:<br />
+     <img src="http://img.Likebk.com/i/items/summon_pet_demon.gif" alt="" /> <strong>Демон</strong> - Силу<br />
+     <img src="http://img.Likebk.com/i/items/summon_pet_cat.gif" alt="" /> <strong>Кот</strong> - Ловкость<br />
+     <img src="http://img.Likebk.com/i/items/summon_pet_owl.gif" alt="" /> <strong>Сова</strong> - Интуицию<br />
+     <img src="http://img.Likebk.com/i/items/summon_pet_pig.gif" alt="" /> <strong>Свин</strong> - Броню<br />
+     <img src="http://img.Likebk.com/i/items/summon_pet_dog.gif" alt="" /> <strong>Пес</strong> - Жизнь<br />
+     <img src="http://img.Likebk.com/i/items/summon_pet_wisp.gif" alt="" /> <strong>Светляк</strong> - Мф. мощности магии стихий<br />
+     <br />
+     Приобретения питомца, вы сможете с помощью кнопки <span style="color: #ffffff;background-color: #51a351;border-radius: 4px;height: 20px; display: inline-block;padding: 2px 12px;margin-bottom: 0;font-size: 14px; font-family: Arial;line-height: 20px;">Звери</span> которую вы можете найти в инвентаре.<br />
+     <br />
+     Чтобы расти и развиваться, зверь должен участвовать в боях. Выпустить его можно в любой момент боя, нажав специальную <img src="http://img.Likebk.com/i/eff/pet_unleash.gif" alt="" /> <strong>кнопку</strong> рядом с приёмами. Зверь получает опыт только за выигранные бои, при этом, если уровень питомца ниже, чем у хозяина, забирает треть его опыта. Уровень зверя ограничен уровнем хозяина, зверь не может быть старше.</p>
+   <div class="tab" style="margin-top:15px">
+     <button class="tablinks" onclick="chahgeTab(event, 'tab1')"  id="defaultOpen">Опыт зверей</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab2')">Бонусы от зверей</button>
+</div>
+
+<div id="tab1" class="tabcontent">
+<br clear="all">
+ <table id="op_tbl" width="35%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px; text-align:center">
+  <tbody>
+    <tr  style="background:#EDD7AE">
+      <td width="15%" ><strong>Уровень</strong></td>
+      <td width="51%"><strong>Опыт</strong></td>
+      <td width="34%"><strong>Лимит опыта за бой</strong></td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>0</strong></td>
+      <td>0 - 110</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>1</strong></td>
+      <td>110 - 410</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>2</strong></td>
+      <td>410 - 1 300</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>3</strong></td>
+      <td>1 300 - 2 500</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>4</strong></td>
+      <td>2 500 - 5 000</td>
+      <td>175</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>5</strong></td>
+      <td>5 000 - 12 500</td>
+      <td>375</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>6</strong></td>
+      <td>12 500 - 30 000</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>7</strong></td>
+      <td>30000 - 300000</td>
+      <td>2700</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>8</strong></td>
+      <td>300 000 - 3 000 000</td>
+      <td>9000</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>9</strong></td>
+      <td>3 000 000 - 10 000 000</td>
+      <td>14000</td>
+    </tr>
+    <tr>
+      <td  style="background:#EDD7AE"><strong>10</strong></td>
+      <td>10 000 000 - ...</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div id="tab2" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="45%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px; text-align:center">
+  <tr style="background:#EDD7AE">
+    <td rowspan="2" align="left"><strong>Животное</strong></td>
+    <td rowspan="2"><strong>Параметр</strong></td>
+    <td colspan="10"><strong>Уровень</strong></td>
+  </tr>
+  <tr style="background:#EDD7AE">
+    <td><strong>1</strong></td>
+    <td><strong>2</strong></td>
+    <td><strong>3</strong></td>
+    <td><strong>4</strong></td>
+    <td><strong>5</strong></td>
+    <td><strong>6</strong></td>
+    <td><strong>7</strong></td>
+    <td><strong>8</strong></td>
+    <td><strong>9</strong></td>
+    <td><strong>10</strong></td>
+  </tr>
+  <tr>
+    <td style="background:#EDD7AE" align="left"><img src="http://img.Likebk.com/i/items/summon_pet_demon.gif" alt="" /> <strong>Демон </strong></td>
+    <td>Сила</td>
+    <td>+1</td>
+    <td>+2</td>
+    <td>+3</td>
+    <td>+4</td>
+    <td>+5</td>
+    <td>+6</td>
+    <td>+7</td>
+    <td>+8</td>
+    <td>+9</td>
+    <td>+10</td>
+  </tr>
+  <tr>
+    <td style="background:#EDD7AE" align="left"><img src="http://img.Likebk.com/i/items/summon_pet_cat.gif" alt="" /> <strong>Кот </strong></td>
+    <td>Ловкость</td>
+    <td>+1</td>
+    <td>+2</td>
+    <td>+3</td>
+    <td>+4</td>
+    <td>+5</td>
+    <td>+6</td>
+    <td>+7</td>
+    <td>+8</td>
+    <td>+9</td>
+    <td>+10</td>
+  </tr>
+  <tr>
+    <td style="background:#EDD7AE" align="left"> <img src="http://img.Likebk.com/i/items/summon_pet_owl.gif" alt="" /> <strong>Сова </strong></td>
+    <td>Интуиция</td>
+    <td>+1</td>
+    <td>+2</td>
+    <td>+3</td>
+    <td>+4</td>
+    <td>+5</td>
+    <td>+6</td>
+    <td>+7</td>
+    <td>+8</td>
+    <td>+9</td>
+    <td>+10</td>
+  </tr>
+    <tr>
+    <td style="background:#EDD7AE" align="left"><img src="http://img.Likebk.com/i/items/summon_pet_pig.gif" alt="" /> <strong>Свин </strong></td>
+    <td>Броня</td>
+    <td>+3</td>
+    <td>+6</td>
+    <td>+9</td>
+    <td>+12</td>
+    <td>+15</td>
+    <td>+18</td>
+    <td>+21</td>
+    <td>+24</td>
+    <td>+27</td>
+    <td>+30</td>
+  </tr>
+  <tr>
+    <td style="background:#EDD7AE" align="left"><img src="http://img.Likebk.com/i/items/summon_pet_dog.gif" alt="" /> <strong>Пес </strong></td>
+    <td>Уровень HP</td>
+    <td> +6 </td>
+    <td>+12</td>
+    <td>+18</td>
+    <td>+24</td>
+    <td>+30</td>
+    <td>+36</td>
+    <td>+42</td>
+    <td>+48</td>
+    <td>+54</td>
+    <td>+60</td>
+  </tr>
+  <tr>
+    <td style="background:#EDD7AE" align="left"><img src="http://img.Likebk.com/i/items/summon_pet_wisp.gif" alt="" /> <strong>Светляк </strong></td>
+    <td>Мф. мощности<br>
+      магии стихий</td>
+    <td>+1</td>
+    <td>+2</td>
+    <td>+3</td>
+    <td>+4</td>
+    <td>+5</td>
+    <td>+7</td>
+    <td>+9</td>
+    <td>+11</td>
+    <td>+13</td>
+    <td>+15</td>
+  </tr>
+</table>
+
+</div>
+
+
+</div></td></tr>
+
+<script type="text/javascript" src="js/tabs.js"></script>

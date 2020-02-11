@@ -1,0 +1,264 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title>Примерочная LikeBK</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<!--<link rel="stylesheet" type="text/css" href="style1.css" media="screen" />-->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="Distribution" content="Global" />
+<meta name="Classification" content="non-profit" />
+<meta name="Resource-type" content="application" />
+<meta name="Language" content="ru" />
+<meta name="save" content="favorite" />
+<script src="http://dress.tampliers.info/menu.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+<div id="popupDiv" style="position: absolute; left: 0px; top: 1px; border: solid 1px infotext; background-color: infobackground; color: infotext; padding: 2px; z-index: 20; visibility: hidden; filter: alpha(opacity = 85, style = 4), blendtrans(duration = 0.3) progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=1); font-size: 8pt"></div>
+<div style="width: 400px; position:absolute; visibility:hidden;z-index:2;background-color:white; border: none 0px black;filter: alpha(opacity = 95, style = 4) margin: 0 auto;" id="dcInfoSpaceOutput"></div>
+<div id="menuDiv" onclick="onMenuClick()" onlosecapture="hideMenuCore()" style="position: absolute; border: solid 1px black; background-color: white; color: black; padding: 2px; z-index: 9; visibility: hidden; filter: alpha(opacity = 92, style = 4), blendtrans(duration = 0.2) progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=2); font-size: 12pt"></div>
+<div id="pmenuDiv" onclick="onMenuClick()" onlosecapture="hideMenuCore()" style="position: absolute; border: solid 1px black; background-color: white; color: black; padding: 2px; z-index: 9; visibility: hidden; filter: alpha(opacity = 92, style = 4), blendtrans(duration = 0.2) progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=135, Strength=2); font-size: 12pt"></div>
+<div id="wrapper">
+<header id="header">
+
+		<h1 class="logo">
+            <a href="/">
+                <img src="http://dress.tampliers.info//images/logo.png"/>
+            </a>
+					<a href="https://money.yandex.ru/quickpay/shop-widget?account=410013031977716&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=buyer&targets-hint=%D0%9C%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6+100+%D1%80.&default-sum=&button-text=01&comment=on&hint=%D0%A3%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5+%D1%81%D0%B2%D0%BE%D0%B9+%D0%9B%D0%BE%D0%B3%D0%B8%D0%BD&successURL=tampliers.info"target= "_blank"><img src="http://dress.tampliers.info/ekr.png" style="margin-left:150px;"></a>
+        </h1>
+		<div class="userPanel">
+		<b>Меню Примерочной</b>
+    <div class="userMenu">
+        <span id="showMenu">
+            <span class="showIcn"></span>
+        </span>
+
+        <div id="myMenu">
+            <div class="background">
+                <ul class="myLinks">
+                    <li>
+                        <a href="/">
+                            Добавить новость
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            Мой профиль
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="/">
+                            Мои сообщения 
+                            <span class="pmNum">
+                                {new-pm}
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/}">
+                            Мои закладки
+                        </a>
+                    </li>
+                    <li>
+                        <a class="exit" href="/">
+                            Выйти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+																																																																																																																																																												
+</div>
+				<div class="panel">
+			<div class="panelCore">
+
+  <ul id="nav">
+  </ul>
+			</div>
+		</div>
+</div>
+</br>
+<div id="content">
+<input class="savefav" type="hidden" id="favstore" name="favstore" value="" onsave="saveFav()" onload="loadFav()" /> <input class="userdata" type="hidden" id="historystore" name="historystore" value="" />
+<input class="userdata" type="hidden" id="offlinecookie" name="offlinecookie" value="" />
+<div id="right">
+
+<div id="dressCabs">
+<!--<div style="width: 100%; font-weight: bold; text-align: center; padding: 8px 8px 8px 8px"><img src="http://dress.tampliers.info/loading_anim.gif" width="200" height="80" border="0" align="right" />Пожалуйста, подождите, пока загружается Примерочная...<br /><br /><small>Если Примерочная не загружается, нажмите <kbd>Ctrl+F5</kbd>, или почистите кэш временных файлов Вашего браузера Internet.</small></div>
+<div style="width: 100%; text-align: center; padding: 8px 8px 8px 8px"><a href="javascript:;" class="TLink" onclick="doClean()">Очистить все данные</a></div>-->
+</div>
+<div id="summaryDiv" style="display: none">&nbsp;</div>
+<div id="expTableDiv" style="display: none">&nbsp;</div>
+<div id="healerDiv" style="display: none">&nbsp;</div>
+<div id="battlesDiv" style="background-color: #E2E0E0; width: 100%; border: 1px solid black; padding: 2px 2px 2px 2px; display: none">&nbsp;</div>
+<div id="builderDiv" style="display: none">&nbsp;</div>
+<hr size="1" noshade="noshade" />
+		<div id="infoDiv"  style="font-size: xx-small" onclick="showDressHint()" title="Щёлкните здесь, чтобы увидеть один из советов по работе с нашей Примерочной."></div></br>
+<div id="helpDiv" style="display: none">
+<div id="helpDivContent">&nbsp;</div>
+
+</div>
+<center><a  href="#" target="_self" onclick="window.scrollTo(0); return false"> <input type="button" class="bbcodes" value="Вверх"></a></center>
+<br>  
+
+</div>
+<script language="javascript" type="text/javascript">
+var dresScripts = {
+	dcacommon: false,
+	dresdefs: false,
+	drestpl: false,
+	dresitms: false,
+	expd: false,
+	pets: true,
+	tricks: false,
+	infospace: false
+	};
+var dresInitialized = false;
+
+function onScriptLoaded(really)
+{
+	if (dresInitialized)
+	{
+		return;
+	}
+	var elt = null;
+	if (!really && window.event && window.event.srcElement)
+	{
+		elt = window.event.srcElement;
+		if (elt.readyState != 'complete' && elt.readyState != 4)
+		{
+			return;
+		}
+	}
+	if (elt == null)
+	{
+		return;
+	}
+	dresScripts[elt.id] = true;
+	var ok = true;
+	var dcount = 0;
+	for (var sid in dresScripts)
+	{
+		if (!dresScripts[sid])
+		{
+			ok = false;
+		}
+		else
+		{
+			dcount++;
+		}
+	}
+	var msg = 'Загружено ' + dcount + ' модулей из 8 необходимых, загрузка продолжается...';
+	window.status = msg;
+	informAboutProgress(msg);
+	if (ok)
+	{
+		if (window.status) window.status = '';
+		onDresserLoaded();
+	}
+}
+
+function onDresserLoaded()
+{
+	if (dresInitialized)
+	{
+		return;
+	}
+	window.status = '';
+	dressOptions.embeddedMode = false;
+	prepareMenu();
+	prepareOfflineMode();
+	localizer.here = '<span style="text-decoration: underline; color: #ff0000;">' + localizer.here + '</span>';
+	initializeDresserAfterItemsLoaded();
+
+// load acquired sets by server if required.
+// %%DRESSSETUP%%
+
+	readOptions();
+	createCab();
+
+
+}
+
+function delayedDresserLoad()
+{
+// another way to init if script's onload not fired.
+if (!dresInitialized)
+{
+//	alert('tricky loading');
+	setTimeout('onDresserLoaded()', 100);
+}
+}
+
+window.onload = delayedDresserLoad;
+
+function doNothing()
+{
+}
+
+function doClean()
+{
+	window.onunload = doNothing;
+	window.location.href = window.location.href;
+}
+
+</script>
+
+
+
+
+
+<center>
+<div id="dcframe">
+
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=43037144&amp;from=informer"
+target="_blank" rel="nofollow"><img src="http://dress.tampliers.info/https://informer.yandex.ru/informer/43037144/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43037144 = new Ya.Metrika({
+                    id:43037144,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src="http://dress.tampliers.info/https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="http://dress.tampliers.info/https://mc.yandex.ru/watch/43037144" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</div>
+</center>
+<script id="dcacommon" language="javascript" type="text/javascript" src="http://dress.tampliers.info/dcacommon.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="tricks" language="javascript" type="text/javascript" src="http://dress.tampliers.info/tricks.js" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
+<script id="dresdefs" language="javascript" type="text/javascript" src="http://dress.tampliers.info/dresdefs.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="dresitms" language="javascript" type="text/javascript" src="http://dress.tampliers.info/dresitms.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="expd" language="javascript" type="text/javascript" src="http://dress.tampliers.info/expd.js" onreadystatechange="onScriptLoaded()" defer></script>
+<script id="pets" language="javascript" type="text/javascript" src="http://dress.tampliers.info/pets.js" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
+<script id="infospace" src="http://dress.tampliers.info/jshttp.js" type="text/javascript" language="javascript" onload="onScriptLoaded(true)" onreadystatechange="onScriptLoaded(false)" defer></script>
+<script id="drestpl" language="javascript" type="text/javascript" src="http://dress.tampliers.info/drestpl2.js" onreadystatechange="onScriptLoaded()" defer></script>
+</div>
+</body>
+</html>

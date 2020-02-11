@@ -1,0 +1,732 @@
+<link rel="stylesheet" href="css/tabs.css" type="text/css">
+
+  <tr >                                    
+ <td align="left" valign="middle" class="leftItemTDnb">
+ <h3>Рыцарский магазин</h3>
+ <div class="pagesMainStyle">
+   <p>Достижение <strong>10000 (десять тысяч)</strong> очков репутации в конкретном городе дает возможность входа в Рыцарский магазин этого города.&nbsp;<br>
+     В <strong>Рыцарском магазин</strong> можно зайти и без репутации, но только для покупки ингредиентов за <strong>Сущность Ресурса</strong>.<br>
+<br />
+<span style="font-size:23px;    color: #8f0000; margin:10px 0">Ассортимент рицарского магазина</span><br />
+   </p>
+   <div class="tab" style="margin-top:15px">
+     <button class="tablinks" onclick="chahgeTab(event, 'tab1')"  id="defaultOpen"><img src="http://img.primebk.ru/i/city_ico2/capitalcity.gif" alt="" height="19" 34> Пещера Тысячи Проклятий</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab2')"><img src="http://img.primebk.ru/i/city_ico2/angelscity.gif" alt="" height="19" 34> Бездна</button>
+  <button class="tablinks" onclick="chahgeTab(event, 'tab3')"><img src="http://img.primebk.ru/i/city_ico2/suncity.gif" alt="" height="19" 34> Грибница</button>
+    <button class="tablinks" onclick="chahgeTab(event, 'tab4')"><img src="http://img.primebk.ru/i/city_ico2/demonscity.gif" alt="" height="19" 34> Катакомбы</button>
+      <button class="tablinks" onclick="chahgeTab(event, 'tab5')"><img src="http://img.primebk.ru/i/city_ico2/10.gif" alt="" height="19" 34> Другое ...</button>
+        <button class="tablinks" onclick="chahgeTab(event, 'tab6')"><img src="images/blank.png" alt="" height="19" >Заклинания</button>
+          <button class="tablinks" onclick="chahgeTab(event, 'tab7')"><img src="images/blank.png" alt="" height="19" > Ресурсы</button>
+</div>
+
+<div id="tab1" class="tabcontent">
+<br clear="all">
+ <table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong> </td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/shield88.gif" alt=""></td>
+      <td><b>Щит Неприступного Утеса </b> (Масса: 20)<br>
+        <strong>Цена: 650.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+[<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>  
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>50</strong><br>
+        &bull; Ловкость: <strong>10</strong><br>
+        &bull; Интуиция: <strong>10</strong><br>
+        &bull; Выносливость: <strong>70</strong><br>
+      <strong>Свойства предмета:</strong><br>
+      &bull;&nbsp;Уровень жизни (HP): <strong>+50</strong><br>
+      &bull; Мф. против критического удара (%): <strong>+70</strong><br>
+      &bull; Мф. блока щитом (%): <strong>+25</strong><br>
+      &bull; Защита от урона:<strong> +25</strong><br>
+      &bull; Броня головы: <strong>13-48</strong><br>
+      &bull; Броня корпуса: <strong>13-48</strong><br>
+      &bull; Броня пояса:<strong> 13-48</strong><br>
+      &bull; Броня ног: <strong>13-48</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/amulet111.gif" alt=""></td>
+      <td><strong>Амулет Быстрой Расправы</strong> (Масса: 20)<br>
+        <strong>Цена: 750.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x15</strong>,<br>
+[<strong>Лучистый Рубин</strong>]<strong> x15</strong>, [<strong>Сущность Ресурса</strong>] <strong>x60&nbsp;</strong><br>
+Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>40</strong><br>
+        &bull; Ловкость: <strong>10</strong><br>
+        &bull; Интуиция: <strong>60</strong><br>
+        &bull; Выносливость: <strong>40</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Следующий каст будет критическим: +7<br>
+        &bull; Интуиция: +7<br>
+        &bull; Мастерство владения мечами: +1<br>
+        &bull;&nbsp;Уровень жизни (HP): <strong>+50</strong><br>
+        &bull; Мф. критического удара (%): <strong>+110</strong><br>
+        &bull; Мф. мощности крит. удара (%): <strong>+20</strong><br>
+        &bull; Мф. против увертывания (%)<strong>: +50</strong><br>
+        &bull; Защита от урона: <strong>+50</strong><br>
+        &bull; Защита от магии: <strong>+20</strong></td>
+    </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/braslet43.gif" alt=""></td>
+      <td><b>Браслеты Неуловимой Мощи</b> (Масса: 2)<br>
+        <strong>Цена: 500.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+[<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>
+Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        • Уровень: <strong>10</strong><br>
+        &bull; Интеллект: <strong>60</strong><br>
+        &bull; Мудрость: <strong>60</strong><br>
+      <strong>Свойства предмета:</strong><br>
+      &bull; Понижение защиты от магии: <strong>+2</strong><br>
+      &bull; Интеллект: <strong>+5</strong><br>
+      &bull;&nbsp;Уровень жизни (HP):<strong> +70</strong><br>
+      &bull;&nbsp;<strong>Уровень маны</strong>: <strong>+70</strong><br>
+      &bull; Мф. мощности магии стихий: <strong>+7</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/naruchi41.gif" alt=""></td>
+      <td><strong>Наручи Неотвратимого Возмездия</strong> (Масса: 2)<br>
+        <strong>Цена: 500.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+[<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>
+Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>40</strong><br>
+        &bull; Ловкость: <strong>60</strong><br>
+        &bull; Интуиция: <strong>10</strong><br>
+        &bull; Выносливость: <strong>40</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Ловкость: <strong>+3</strong><br>
+        &bull; Мастерство владения ножами, кинжалами: <strong>+1</strong><br>
+        &bull; Мастерство владения топорами, секирами: <strong>+1</strong><br>
+        &bull; Мастерство владения дубинами, молотами: <strong>+1</strong><br>
+        &bull; Мастерство владения мечами: <strong>+1</strong><br>
+        &bull; Мф. увертывания (%): <strong>+110</strong><br>
+        &bull; Мф. против увертывания (%):<strong> +60</strong><br>
+        &bull; Мф. контрудара (%):<strong> +5</strong><br>
+        &bull; Мф. мощности урона: <strong>+10</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div id="tab2" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong></td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/boots33.gif" alt=""></td>
+      <td><b>Сандали Неуловимой Мощи</b> (Масса: 5)<br>
+        <strong>Цена: 500.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Интеллект: <strong>60</strong><br>
+        &bull; Мудрость: <strong>60</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Интеллект: <strong>+6</strong><br>
+        &bull;&nbsp;Уровень жизни (HP): <strong>+50</strong><br>
+        &bull;&nbsp;Уровень маны: <strong>+55</strong><br>
+        &bull; Защита от урона: <strong>+25</strong><br>
+        &bull; Мф. мощности магии стихий: <strong>+10</strong><br>
+        &bull; Броня ног: <strong>6-20</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/clip100.gif" alt=""></td>
+      <td><strong>Серьги Неотвратимого Возмездия</strong> (Масса: 5)<br>
+        <strong>Цена: 750.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x15</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x15</strong>, [<strong>Сущность Ресурса</strong>] <strong>x60&nbsp;</strong><br>
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>40</strong><br>
+        &bull; Ловкость: <strong>60</strong><br>
+        &bull; Интуиция: <strong>10</strong><br>
+        &bull; Выносливость: <strong>40</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Ловкость: <strong>+4</strong><br>
+        &bull; Мф. увертывания (%): <strong>+130</strong><br>
+        &bull; Мф. против увертывания (%): <strong>+80</strong><br>
+        &bull; Мф. контрудара (%): <strong>+15</strong><br>
+        &bull; Мф. парирования (%):<strong> +5</strong><br>
+        &bull; Защита от магии: <strong>+35</strong><br>
+        &bull; Мф. мощности урона:<strong> +5</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/boots32.gif" alt=""></td>
+      <td><b>Сапоги Быстрой Расправы </b> (Масса: 5)<br>
+        <strong>Цена: 500.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень:<strong> 10</strong><br>
+        &bull; Сила: <strong>40</strong><br>
+        &bull; Ловкость: <strong>10</strong><br>
+        &bull; Интуиция: <strong>60</strong><br>
+        &bull; Выносливость: <strong>40</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Интуиция: <strong>+6</strong><br>
+        &bull;&nbsp;Уровень жизни (HP): <strong>+40</strong><br>
+        &bull; Мф. критического удара (%): <strong>+90</strong><br>
+        &bull; Мф. против увертывания (%):<strong> +50</strong><br>
+        &bull; Защита от магии: <strong>+35</strong><br>
+        &bull; Броня ног:<strong> 11-40</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/armor113.gif" alt=""></td>
+      <td><strong>Броня Неприступного Утеса</strong> (Масса: 25)<br>
+        <strong>Цена: 1000.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x20</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x20</strong>, [<strong>Сущность Ресурса</strong>] <strong>x70&nbsp;</strong><br>
+        Долговечность: <strong>0/100</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>50</strong><br>
+        &bull; Ловкость: <strong>10</strong><br>
+        &bull; Интуиция: <strong>10</strong><br>
+        &bull; Выносливость: <strong>70</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Мастерство владения ножами, кинжалами: <strong>+2</strong><br>
+        &bull; Мастерство владения топорами, секирами: <strong>+2</strong><br>
+        &bull; Мастерство владения дубинами, молотами: <strong>+2</strong><br>
+        &bull; Мастерство владения мечами: <strong>+2</strong><br>
+        &bull;&nbsp;Уровень жизни (HP): <strong>+200</strong><br>
+        &bull; Мф. против критического удара (%): <strong>+150</strong><br>
+        &bull; Мф. против увертывания (%): <strong>+100</strong><br>
+        &bull; Защита от урона: <strong>+150</strong><br>
+        &bull; Защита от магии: <strong>+50</strong><br>
+        &bull; Броня корпуса: <strong>34-99</strong></td>
+    </tr>
+      <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/aboots2_dk2kd9.gif" alt=""></td>
+      <td><strong>Сапоги Небесного Ветра</strong> (Масса: 10)<br>
+        <strong>Цена: 0.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x20</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x20</strong>, [<strong>Сущность Ресурса</strong>] <strong>x70&nbsp;</strong><br>
+        Долговечность: <strong>0/100</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>50</strong><br>
+        &bull; Ловкость: <strong>50</strong><br>
+        &bull; Интуиция: <strong>20</strong><br>
+        &bull; Выносливость: <strong>35</strong><br>
+        <strong>Действует на:</strong><br>
+        &bull; Ловкость: <strong>+6</strong><br>
+        &bull; Интуиция: <strong>+2</strong><br>
+        &bull;&nbsp;Уровень жизни (HP): <strong>+54</strong><br>
+        &bull; Мф. против критического удара (%):<strong> +70</strong><br>
+        &bull; Мф. увертывания (%):<strong> +70</strong><br>
+        &bull; Защита от магии: <strong>+20</strong><br>
+        &bull; Броня ног: <strong>14-52</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Защита от урона: <strong>+15</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="tab3" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong></td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/helmet92.gif" alt=""></td>
+      <td><b>Шлем Неотвратимого Возмездия</b> (Масса: 5)<br>
+        <strong>Цена: 750.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x15</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x15</strong>, [<strong>Сущность Ресурса</strong>] <strong>x60&nbsp;</strong><br>
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>40</strong><br>
+        &bull; Ловкость: <strong>60</strong><br>
+        &bull; Интуиция: <strong>10</strong><br>
+        &bull; Выносливость: <strong>40</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Ловкость:<strong> +6</strong><br>
+        &bull; Мастерство владения оружием: <strong>+2</strong><br>
+        &bull; Мф. увертывания (%):<strong> +150</strong><br>
+        &bull; Мф. парирования (%):<strong> +5</strong><br>
+        &bull; Защита от урона: <strong>+25</strong><br>
+        &bull; Защита от магии стихий: <strong>+25</strong><br>
+        &bull; Мф. мощности урона: <strong>+6</strong><br>
+        &bull; Броня головы: <strong>11-40</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/belt52.gif" alt=""></td>
+      <td><strong>Пояс Неприступного Утеса</strong> (Масса: 5)<br>
+        <strong>Цена: 500.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>50</strong><br>
+        &bull; Ловкость: <strong>10</strong><br>
+        &bull; Интуиция: <strong>10</strong><br>
+        &bull; Выносливость: <strong>70</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Сила: <strong>+5</strong><br>
+        &bull;&nbsp;Уровень жизни (HP): <strong>+100</strong><br>
+        &bull; Мф. против критического удара (%): <strong>+20</strong><br>
+        &bull; Мф. против увертывания (%): <strong>+20</strong><br>
+        &bull; Защита от урона: <strong>+25</strong><br>
+        &bull; Броня пояса: <strong>21-80</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/naruchi92.gif" alt=""></td>
+      <td><b>Перчатки Неуловимой Мощи </b> (Масса: 5)<br>
+        <strong>Цена: 600.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Интеллект: <strong>60</strong><br>
+        &bull; Мудрость: <strong>60</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Понижение защиты от магии: <strong>+3</strong><br>
+        &bull; Интеллект: <strong>+6</strong><br>
+        &bull; Мастерство владения магическими посохами: <strong>+2</strong><br>
+        &bull;&nbsp;Уровень жизни (HP): <strong>+40</strong><br>
+        &bull;&nbsp;Уровень маны: <strong>+40</strong><br>
+        &bull; Мф. мощности магии стихий: <strong>+12</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/naruchi91.gif" alt=""></td>
+      <td><strong>Перчатки Быстрой Расправы</strong> (Масса: 5)<br>
+        <strong>Цена: 600.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x10</strong>,<br>
+        [<strong>Лучистый Рубин</strong>]<strong> x10</strong>, [<strong>Сущность Ресурса</strong>] <strong>x55&nbsp;</strong><br>
+        Долговечность: <strong>0/100</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>10</strong><br>
+        &bull; Сила: <strong>40</strong><br>
+        &bull; Ловкость: <strong>10</strong><br>
+        &bull; Интуиция: <strong>60</strong><br>
+        &bull; Выносливость: <strong>40</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Интуиция: <strong>+5</strong><br>
+        &bull; Мастерство владения мечами: <strong>+3</strong><br>
+        &bull; Мф. критического удара (%): <strong>+50</strong><br>
+        &bull; Мф. мощности крит. удара (%): <strong>+10</strong><br>
+        &bull; Мф. против увертывания (%): <strong>+40</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="tab4" class="tabcontent">
+<br clear="all">
+ <table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong> </td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/clip91.gif" alt=""></td>
+      <td><b>Серьги Неуемной Силы</b> (Масса: 5)<br>
+        <strong>Цена: 400.00 кр.</strong> <br>
+        Требует предмет: 
+[<strong>Лучистый Рубин</strong>]<strong> x10</strong>, <br>
+[<strong>Сущность Ресурса</strong>] <strong>x22&nbsp;</strong><br>  
+        Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>9</strong><br>
+        &bull; Сила: <strong>50</strong><br>
+        &bull; Ловкость: <strong>15</strong><br>
+        &bull; Интуиция: <strong>15</strong><br>
+        &bull; Выносливость: <strong>50</strong><br>
+      <strong>Свойства предмета:</strong><br>
+      &bull; Сила: +<strong>10</strong><br>
+      &bull; Мастерство владения дубинами, молотами: <strong>+1</strong><br>      &bull;&nbsp;Уровень жизни (HP):<strong> +55</strong><br>
+      &bull; Мф. против критического удара (%): <strong>+70</strong><br>
+      &bull; Мф. против увертывания (%): <strong>+70</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/ring135.gif" alt=""></td>
+      <td><strong>Кольцо Неуемной Силы</strong> (Масса: 5)<br>
+        <strong>Цена: 250.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистый топаз</strong>] <strong>x15</strong>,<br>
+[<strong>Лучистый Рубин</strong>]<strong> x5</strong>, [<strong>Сущность Ресурса</strong>] <strong>x15&nbsp;</strong><br>
+Долговечность: <strong>0/50</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: 9<br>
+        &bull; Сила: 50<br>
+        &bull; Ловкость: 15<br>
+        &bull; Интуиция: 15<br>
+        &bull; Выносливость: 50<br>
+        <strong>Свойства предмета:</strong><br>
+        &bull; Сила: +7<br>
+        &bull; Мф. против критического удара (%): +40<br>
+        &bull; Мф. против увертывания (%): +40</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<div id="tab5" class="tabcontent">
+<br clear="all">
+ <table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong> </td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items//new/pletII.png" alt=""></td>
+      <td><b>Плеть II</b> (Масса: 0.01)<br>
+        <strong>Цена: 500.00 кр.</strong> <br>
+        Требует предмет: 
+[<strong>Сущность Ресурса</strong>] <strong>x50&nbsp;</strong><br>  
+        Долговечность: <strong>0/1</strong><br>
+      <strong>Описание:</strong><br>
+      Плеть для верховой езды</td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items//new/pletIII.png" alt=""></td>
+      <td><strong>Плеть III</strong> (Масса: 0.01)<br>
+        <strong>Цена: 1000.00 кр.</strong> <br>
+        Требует предмет: 
+[<strong>Сущность Ресурса</strong>] <strong>x100&nbsp;</strong><br>
+Долговечность: <strong>0/1</strong><br>
+<strong>Описание:</strong><br>
+Плеть для верховой езды</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div id="tab6" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong></td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/d_blat-6.gif" alt=""></td>
+      <td><b>Пропуск Забытых </b> (Масса: 1)<br>
+        <strong>Цена: 50.00 кр.</strong> <br>
+        Требует предмет: [<strong>Сущность Ресурса</strong>] <strong>x3</strong>&nbsp; <br>
+        Долговечность: <strong>0/1</strong><br>
+        <strong>Описание:</strong><br>
+        Позволяет посетить Подземелье на 6 часов раньше.</td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/d_blat24.gif" alt=""></td>
+      <td><strong>Клаустрофобия </strong> (Масса: 1)<br>
+        <strong>Цена: 250.00 кр.</strong> <br>
+        Требует предмет: [<strong>Сущность Ресурса</strong>] <strong>x10&nbsp; </strong><br>
+        Долговечность:<strong> 0/1</strong><br>
+        Задержка использования: <strong>5 мин.</strong><br>
+        <strong>Описание:</strong><br>
+        Увеличивает время отдыха от Подземелья на 24 часа.</td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/enhp_5_defend_all_1.gif" alt=""></td>
+      <td><b>Зачаровать Пояс: Чары Воли Глубин 1  </b> (Масса: 1)<br>
+        <strong>Цена: 350.00 кр.</strong> <br>
+        Требует предмет: [<strong>Шепот гор</strong>] <strong>x5</strong>,<br>
+[<strong>Железное Дерево</strong>] <strong>x15</strong>, [<strong>Лучистое Серебро</strong>] <strong>x12&nbsp; </strong><br>
+        Срок годности: <strong>1 мес.</strong><br>
+        <strong>Описание:</strong><br>
+        Зачарованный этим свитком пояс имеет шанс поглотить 40% нанесенного вам урона.</td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/invoke_movespeed_dungeon60_5.gif" alt=""></td>
+      <td><strong>Мягкая Поступь(5)</strong> (Масса: 1)<br>
+        <strong>Цена: 30.00 кр.</strong> <br>
+        Требует предмет: [<strong>Лучистое Серебро</strong>] <strong>x7</strong>,<br>
+[<strong>Мифрил</strong>] <strong>x5&nbsp; </strong><br>
+        Долговечность: <strong>0/1</strong><br>
+        Вероятность срабатывания: <strong>100%</strong><br>
+        Продолжительность действия:<strong> 5 дн.</strong><br>
+        <strong>Описание:</strong><br>
+        Уменьшает на 60% задержку перемещения в стандартных подземельях.<br>
+        Срок действия не замораживается во сне.</td>
+    </tr>
+      <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/enhp_5_dampen_all_1.gif" alt=""></td>
+      <td><strong>Зачаровать Пояс: Чары Проклятья Древних 1 </strong> (Масса: 1)<br>
+        <strong>Цена: 350.00 кр.</strong> <br>
+        Требует предмет: [<strong>Золото</strong>] <strong>x5</strong>, [<strong>Сталь</strong>] <strong>x15</strong>, <br>
+        [<strong>Лучистый топаз</strong>] <strong>x10&nbsp;</strong><br>
+        Долговечность: <strong>0/1</strong><br>
+        Срок годности: 1 мес. <br>
+        <strong>Описание:</strong><br>
+        Зачарованный этим свитком пояс имеет шанс временно понизить характиристики атаковавшего противника. Пояс связывается с владельцем общей судьбой после зачарования.</td>
+    </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/dispell1.gif" alt=""></td>
+        <td><b>Снять Проклятье</b> (Масса: 1)<br>
+          <strong>Цена: 300.00 кр.</strong> <br>
+          Требует предмет:[<strong>Лучистое Серебро</strong>] <strong>x7</strong>, <br>
+          [<strong>Мифрил</strong>]<strong> x5&nbsp;&nbsp;</strong><br>
+          Долговечность: <strong>0/1</strong><br>
+          Задержка использования: <strong>5 мин.&nbsp;</strong><br>
+          Вероятность срабатывания: <strong>100% </strong><br>
+          <strong>Описание:</strong><br>
+          Снимает наложенное проклятье.</td>
+      </tr>
+      <tr>
+        <td  align="center"><img src="http://img.primebk.ru/i/items/tz.gif" alt=""></td>
+        <td><strong>Тайное Знание (том 1)</strong><br>
+          <strong>Цена: 200.00 кр.</strong> <br>
+          Требует предмет:[<strong>Сущность Ресурса</strong>] <strong>x5&nbsp;</strong><br>
+          Долговечность: <strong>0/1</strong><br>
+          <strong>Требуется минимальное:</strong><br>
+          &bull; Уровень: <strong>7</strong><br>
+          <strong>Свойства предмета:</strong><br>
+          Добавляет <strong>+1 дополнительный слот</strong> для приемов. Каждый том может быть использован лишь один раз. Для изучения требуется знание третьего тома.</td>
+      </tr>
+      <tr>
+        <td  align="center"><img src="http://img.primebk.ru/i/items/tz.gif" alt=""></td>
+        <td><strong>Тайное Знание (том 2)</strong><br>
+          <strong>Цена: 400.00 кр.</strong> <br>
+          Требует предмет:[<strong>Сущность Ресурса</strong>] <strong>x15&nbsp;</strong><br>
+          Долговечность: <strong>0/1</strong><br>
+          <strong>Требуется минимальное:</strong><br>
+          &bull; Уровень: <strong>8</strong><br>
+          <strong>Свойства предмета:</strong><br>
+          Добавляет <strong>+1 дополнительный слот</strong> для приемов. Каждый том может быть использован лишь один раз. Для изучения требуется знание третьего тома.</td>
+      </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/tz.gif" alt=""></td>
+      <td><strong>Тайное Знание (том 3)</strong><br>
+        <strong>Цена: 600.00 кр.</strong> <br>
+        Требует предмет:[<strong>Сущность Ресурса</strong>] <strong>x15&nbsp;</strong><br>
+        Долговечность: <strong>0/1</strong><br>
+        <strong>Требуется минимальное:</strong><br>
+        &bull; Уровень: <strong>9</strong><br>
+        <strong>Свойства предмета:</strong><br>
+        Добавляет <strong>+1 дополнительный слот</strong> для приемов. Каждый том может быть использован лишь один раз. Для изучения требуется знание третьего тома.</td>
+    </tr>
+     <tr>
+       <td  align="center"><img src="http://img.primebk.ru/i/items/tz.gif" alt=""></td>
+       <td><strong>Тайное Знание (том 4)</strong><br>
+         <strong>Цена: 1200.00 кр.</strong> <br>
+         Требует предмет:[<strong>Сущность Ресурса</strong>] <strong>x60&nbsp;</strong><br>
+         Долговечность: <strong>0/1</strong><br>
+         <strong>Требуется минимальное:</strong><br>
+         &bull; Уровень: <strong>10</strong><br>
+         <strong>Свойства предмета:</strong><br>
+         Добавляет <strong>+1 дополнительный слот</strong> для приемов. Каждый том может быть использован лишь один раз. Для изучения требуется знание третьего тома.</td>
+     </tr>
+  </tbody>
+</table>
+</div>
+<div id="tab7" class="tabcontent">
+<br clear="all">
+<table id="op_tbl" width="60%" border="1" cellspacing="0" cellpadding="0" style="margin: 25px 10px;">
+  <tbody>
+    <tr style="background:#EDD7AE">
+      <td width="20%"><strong>Предмет</strong></td>
+      <td width="80%"><strong>Название</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/mater267.gif" alt=""></td>
+      <td><b>Раскаленная магма </b> (Масса: 1)<br>
+        <strong>Цена: 40.00 кр.</strong> <br>
+        Требует предмет: [<strong>Сущность Ресурса</strong>] <strong>x8&nbsp; </strong><br>
+        Долговечность: <strong>0/1</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/mater_shop7.gif" alt=""></td>
+      <td><strong>Сущность Ресурса </strong> (Масса: 0.01)<br>
+        <strong>Цена: 25.00 кр.</strong>&nbsp;<br>
+        Требует предмет: [<strong>Кристалл тысячи ответов</strong>] <strong>x2</strong>, [<strong>Кристалл голоса предков</strong>] <strong>x2</strong>, [<strong>Кристалл стабильности</strong>] <strong>x2&nbsp;</strong> <br>
+        Долговечность: <strong>0/1</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat7.gif" alt=""></td>
+      <td><b>Сущность Амулета</b> (Масса: 0.01)<br>
+        <strong>Цена: 300.00 кр.</strong> <br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp;</strong> <br>
+        Долговечность: <strong>0/1</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/sp_mat17.gif" alt=""></td>
+      <td><b>Сущность Щита</b> (Масса: 0.01)<br>
+        <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp; </strong><br>
+        Долговечность: <strong>0/1</strong></td>
+      </tr>
+      <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/sp_mat21.gif" alt=""></td>
+      <td><b>Сущность Оружия</b> (Масса: 0.01)<br>
+        <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1,</strong> [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp;</strong> <br>
+        Долговечность: <strong>0/1</strong></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat23.gif" alt=""></td>
+        <td><b>Сущность Брони</b> (Масса: 0.01)<br>
+          <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>]<strong> x2</strong>, [<strong>Слиток пустынной руды</strong>]<strong> x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3<br>
+          </strong>Долговечность:<strong> <strong>0/1</strong>          &nbsp;&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat11.gif" alt=""></td>
+        <td><b>Сущность Плаща</b> (Масса: 0.01)<br>
+          <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3<br>
+            </strong>Долговечность:<strong> <strong>0/1</strong>          &nbsp;&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat19.gif" alt=""></td>
+        <td><b>Сущность Шлема</b> (Масса: 0.01)<br>
+          <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>]<strong> x3</strong>&nbsp;<strong><br>
+            </strong>Долговечность:<strong> <strong>0/1</strong> &nbsp;&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat1.gif" alt=""></td>
+        <td><b>Сущность Сапог </b> (Масса: 0.01)<br>
+          <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>]<strong> x3</strong>&nbsp;<strong><br>
+          </strong>Долговечность:<strong> <strong>0/1</strong> &nbsp;&nbsp;</strong></td>
+      </tr>
+     <tr>
+       <td  align="center"><img src="http://img.primebk.ru/i/items/sp_mat9.gif" alt=""></td>
+       <td><b>Сущность Сапог </b> (Масса: 0.01)<br>
+         <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+         Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>]<strong> x1</strong>, [<strong>Корень змеиного дерева</strong>]<strong> x3&nbsp;&nbsp;<br>
+         </strong>Долговечность:<strong> <strong>0/1</strong> &nbsp;&nbsp;</strong></td>
+       </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat15.gif" alt=""></td>
+      <td><b>Сущность Амулета</b> (Масса: 0.01)<br>
+        <strong>Цена: 300.00 кр.</strong> <br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp;</strong> <br>
+        Долговечность: <strong>0/1</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/sp_mat5.gif" alt=""></td>
+      <td><b>Сущность Наручей</b> (Масса: 0.01)<br>
+        <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp; </strong><br>
+        Долговечность: <strong>0/1</strong></td>
+      </tr>
+      <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/sp_mat13.gif" alt=""></td>
+      <td><b>Сущность Пояса</b> (Масса: 0.01)<br>
+        <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1,</strong> [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp;</strong> <br>
+        Долговечность: <strong>0/1</strong></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat3.gif" alt=""></td>
+        <td><b>Сущность Кольца</b> (Масса: 0.01)<br>
+          <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>]<strong> x2</strong>, [<strong>Слиток пустынной руды</strong>]<strong> x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3<br>
+          </strong>Долговечность:<strong> <strong>0/1</strong>          &nbsp;&nbsp;</strong></td>
+      </tr>
+       <tr>
+         <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat8.gif" alt=""></td>
+         <td><b>Сущность Амулета [2] </b> (Масса: 0.01)<br>
+           <strong>Цена: 600.00 кр.</strong> <br>
+           Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x5</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x3</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x7</strong>&nbsp;<br>
+           Долговечность: <strong>0/1</strong></td>
+       </tr>
+       <tr>
+         <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat10.gif" alt=""></td>
+         <td><b>Сущность Перчаток [2]  </b> (Масса: 0.01)<br>
+           <strong>Цена: 600.00 кр.</strong> <br>
+           Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x5</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x3</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x7</strong>&nbsp;<br>
+           Долговечность: <strong>0/1</strong></td>
+       </tr>
+       <tr>
+         <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat4.gif" alt=""></td>
+         <td><b>Сущность Кольца [2]</b> (Масса: 0.01)<br>
+           <strong>Цена: 600.00 кр.</strong> <br>
+           Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x5</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x3</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x7</strong>&nbsp;<br>
+           Долговечность: <strong>0/1</strong></td>
+       </tr>
+       <tr>
+         <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat6.gif" alt=""></td>
+         <td><b>Сущность Наручей [2] </b> (Масса: 0.01)<br>
+           <strong>Цена: 600.00 кр.</strong> <br>
+           Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x5</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x3</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x7</strong>&nbsp;<br>
+           Долговечность: <strong>0/1</strong></td>
+       </tr>
+       <tr>
+         <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat12.gif" alt=""></td>
+         <td><b>Сущность Плаща [2] </b> (Масса: 0.01)<br>
+           <strong>Цена: 600.00 кр.</strong> <br>
+           Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x5</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x3</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x7</strong>&nbsp;<br>
+           Долговечность: <strong>0/1</strong></td>
+       </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat2.gif" alt=""></td>
+        <td><b>Сущность Сапог [2]</b> (Масса: 0.01)<br>
+          <strong>Цена: 600.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>]<strong> x3</strong>&nbsp;<strong><br>
+            </strong>Долговечность:<strong> <strong>0/1</strong> &nbsp;&nbsp;</strong></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat16.gif" alt=""></td>
+        <td><b>Сущность Серег [2]  </b> (Масса: 0.01)<br>
+          <strong>Цена: 600.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>]<strong> x3</strong>&nbsp;<strong><br>
+          </strong>Долговечность:<strong> <strong>0/1</strong> &nbsp;&nbsp;</strong></td>
+      </tr>
+     <tr>
+       <td  align="center"><img src="http://img.primebk.ru/i/items/sp_mat14.gif" alt=""></td>
+       <td><b>Сущность Пояса [2] </b> (Масса: 0.01)<br>
+         <strong>Цена: 600.00 кр.</strong>&nbsp;<br>
+         Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>]<strong> x1</strong>, [<strong>Корень змеиного дерева</strong>]<strong> x3&nbsp;&nbsp;<br>
+         </strong>Долговечность:<strong> <strong>0/1</strong> &nbsp;&nbsp;</strong></td>
+       </tr>
+        <tr>
+      <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat20.gif" alt=""></td>
+      <td><b>Сущность Шлема [2]</b> (Масса: 0.01)<br>
+        <strong>Цена: 600.00 кр.</strong> <br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp;</strong> <br>
+        Долговечность: <strong>0/1</strong></td>
+    </tr>
+    <tr>
+      <td  align="center"><img src="http://img.primebk.ru/i/items/sp_mat18.gif" alt=""></td>
+      <td><b>Сущность Щита [2]</b> (Масса: 0.01)<br>
+        <strong>Цена: 600.00 кр.</strong>&nbsp;<br>
+        Требует предмет: [<strong>Эссенция чистоты</strong>] <strong>x2</strong>, [<strong>Слиток пустынной руды</strong>] <strong>x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3&nbsp; </strong><br>
+        Долговечность: <strong>0/1</strong></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="http://img.primebk.ru/i/items/sp_mat22.gif" alt=""></td>
+        <td><b>Сущность Оружия [2]</b> (Масса: 0.01)<br>
+          <strong>Цена: 300.00 кр.</strong>&nbsp;<br>
+          Требует предмет: [<strong>Эссенция чистоты</strong>]<strong> x2</strong>, [<strong>Слиток пустынной руды</strong>]<strong> x1</strong>, [<strong>Корень змеиного дерева</strong>] <strong>x3<br>
+            </strong>Долговечность:<strong> <strong>0/1</strong>          &nbsp;&nbsp;</strong></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+</div></td></tr>
+
+<script type="text/javascript" src="js/tabs.js"></script>

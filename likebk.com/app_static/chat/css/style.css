@@ -1,0 +1,30 @@
+#log {
+	width: 590px;
+	height: 290px;
+	border: 1px solid rgb(192, 192, 192);
+	padding: 5px;
+	margin-bottom: 5px;
+	overflow: auto;
+}
+#input {
+	width: 550px;
+}
+#send {
+	width: 50px;
+}
+
+.in {
+	color: rgb(0, 0, 0);
+}
+.out {
+	color: rgb(0, 0, 0);
+}
+.time {
+	
+}
+.system {
+	
+}
+.user {
+	
+}
